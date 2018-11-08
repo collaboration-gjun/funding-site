@@ -1,2 +1,3 @@
-# funding-site
-funding site
+boilerplate-gulp-compass-breakpoint
+node server.js
+gulp watch
