@@ -1,0 +1,867 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sm-pad-lr {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+
+/*瀑布流樣式--顏色修改------*/
+/*第1組*/
+.line-set{
+	background-color: #fce4cc;
+}
+
+.short-line{
+	background-color: #ffa54a;
+}
+
+.hight-line{
+	background-color: #ee7800;
+}
+
+.plus-btn{
+	background-color: #ee7800;
+}
+
+.plus-btn:hover{
+	background-color: #fd8b19;
+}
+
+
+
+/*支援服務-----------------------------------------------------------*/
+/*頁籤-------------------------------------------*/
+
+.center-title-line02.gray{ /*新增色碼*/
+	background-color: #808080;
+	position: relative;
+	z-index: 1;
+}
+
+.bookmark-title-width{
+	width: 75%;
+	text-align: center;
+}
+
+.bk-font{
+	font-size: calc(.8vw + 14px); /*calc(1vw + 14px);*/
+	color: #808080;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 112%;
+	text-align: center;
+	border-bottom: none;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.bk-font.focus{
+	display: inline-block;
+	color: #ee7800;
+	border-bottom: 3px solid #ee7800;
+	position: relative;
+	z-index: 2;
+}
+
+.bk-td-width{
+	width: 30%;
+	vertical-align: bottom;
+}
+
+.bookmark-w01{
+	width: 99%;
+}
+
+
+tr td a:link {
+	text-decoration: none;
+}
+
+tr td a:hover {
+	text-decoration: none;
+}
+
+tr td a:visited {
+	text-decoration: none;
+}
+
+tr td a:active {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+	.bookmark-title-width{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 522px){
+	.bookmark-w01{
+		width: 99%;
+	}
+}
+
+
+
+
+/*01---軟體下載與環境測試-------------------------------*/
+.soft-border{
+	border: 1px solid #b8b6b8;
+}
+
+.software-txt{
+	width: 100%;
+	font-size: calc(.4vw + 16px);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.software-txt.blue01{
+	background-color: #0084ff;
+}
+
+.software-txt.orange01{
+	background-color: #ff9626;
+}
+
+.software-txt.green01{
+	background-color: #4ab800;
+}
+
+
+.soft-dw-set{
+	width: 100%;
+	position: relative;
+	height: 240px;
+}
+
+
+.soft-center{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.soft-center a:hover{
+	text-decoration: none;
+}
+
+
+
+.soft-dw-img{
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+
+
+.soft-dw-btn-txt{
+	font-size: calc(.3vw + 14px);
+	color: #ffffff;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.soft-dw-btn{
+	width: 100%;
+	border-radius: 2px;
+	background-color: #00509b;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+.soft-dw-btn:hover{
+	background-color: #0069CB;
+}
+
+.soft-dw-btn.orange01{
+	background-color: #ff9626;
+}
+
+.soft-dw-btn.orange01:hover{
+	background-color:#FFA84B;
+}
+
+
+.soft-dw-btn.green01{
+	background-color: #4ab800;
+}
+
+.soft-dw-btn.green01:hover{
+	background-color:#59DD00;
+}
+
+
+
+@media screen and (max-width:991px){
+	.soft-dw-set{
+		height: auto;
+	}
+	
+	.soft-center{
+		position: relative;
+		top: inherit;
+		transform: none;
+	}
+	
+}
+
+
+@media screen and (max-width: 580px){
+	
+	.soft-sm-width{
+		width: 100%;
+	}
+	
+	.software-txt{
+		font-size: calc(.8vw + 20px);
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+
+
+
+/*02---體驗專區---------------------------------------*/
+.support-max-width{
+	width: 75%;
+}
+
+.search-group{
+	text-align: center;
+}
+
+
+.id-txt{
+	display: inline-block;
+	font-size: calc(.3vw + 16px);
+	font-weight: bold;
+	color: #002548;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.support-id-input{
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+.search-btn-txt{
+	display: inline-block;
+	font-size: calc(.3vw + 14px);
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.search-btn{
+	width: 8%;
+	border-radius: 2px;
+	background-color: #002548;
+	cursor: pointer;
+}
+
+.search-btn:hover{
+	background-color: #0257a7;
+}
+
+@media screen and (max-width: 991px){
+	.search-btn{
+		width: 15%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.search-btn{
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.support-id-input{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 528px){
+	.support-id-input{
+		width: 70%;
+		margin-bottom: 20px;
+	}
+	
+	.search-btn{
+		width: 35%;
+		margin-bottom: 25px;
+	}
+	
+}
+
+/*表格設定---------*/
+
+.stable-set{
+	width: 100%;
+	border: 1px solid #a5a4a5;
+}
+
+.support-table > tr > td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.stable-w01{
+	width: 30%;
+}
+
+.stable-w02{
+	width: 25%;
+}
+
+.stable-w03{
+	width: 25%;
+}
+
+.stable-w04{
+	width: 20%;
+}
+
+.sup-table-title{
+	font-size: calc(.3vw + 16px);
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: 2px;
+	background-color: #8f8f8f;
+}
+
+
+.sup-table-p{
+	font-size: calc(.3vw + 14px);
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #001b36;
+	text-align: center;
+}
+
+
+.pc-img-set{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.pc-btn-in{
+	border-radius: 2px;
+	background-color: #c7e7ff;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.pc-btn-in:hover{
+	background-color: #a0d6ff;
+	transition: .2s;
+}
+
+.pc-btn-off{
+	border-radius: 2px;
+	background-color: #e6e6e6;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+@media screen and (max-width:767px){
+	.pc-btn-in{
+		display: inline-block;
+	}
+	
+	.pc-btn-off{
+		display: inline-block;
+	}
+	
+	.sup-table-p{
+		font-size: calc(.4vw + 16px);
+		line-height: 110%;
+	}
+	
+}
+
+
+/*改表格-----------------------*/
+/*體驗專區表格-----------*/
+
+.result-box table {
+	border: 0px none;
+	width: 100%;
+}
+.result-box tbody {
+	color:#4f4f4f;		
+	line-height: 120%;
+}
+.result-box th, .result-box td {
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #a5a4a5;
+	border-right: 1px solid #a5a4a5;
+	border-bottom: 1px solid #a5a4a5;
+	height: 60px;		
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3px;
+	padding-right: 3px;
+	word-break: break-all;
+	word-wrap: break-word;
+	display: table-cell;
+}
+.result-box table tr th:last-child, .result-box table tr td:last-child {
+	border-right-style: block;
+}
+.result-box table:nth-child(2n) tr {
+	background-color: #ffffff;
+}
+.result-box table:nth-child(2n+1) tr {
+	background-color: #ffffff;
+}
+.result-box table:nth-child(1) tr {
+	background-color: #8f8f8f; 
+  	color:#FFFFFF;
+}
+/*.result-box td:nth-child(3) {
+	font-size: 73%;
+}*/
+.result-box td span {
+	display: inline-block;
+}
+
+@media screen and (max-width:767px) {	
+	.result-box table {			
+		margin-bottom: 15px;		
+		border-top: 1px solid #a5a4a5;		
+		border-radius: 5px 5px 1px 1px;
+		box-shadow: 0px 5px 20px -10px gray;
+		overflow: hidden;	
+		display: inline-block;
+	}
+	.result-box tbody {
+		line-height: 120%;
+	}
+	.result-box table:nth-child(1) {
+		display: none;
+	}	
+	.result-box table:nth-child(2n+1) tr {
+		background-color: #ffffff;
+	}
+	.result-box table td {
+		width: 100%;
+		display: inline-block;
+		text-align: left;
+		height:auto;
+		font-size: 90%;
+		padding: 8px 10px 5px;
+		border-right:none;
+		border-left: none;
+		border-bottom-color: rgba(255,255,255, .4);
+		border-bottom-style:solid;		
+	}
+	.result-box table td:first-child {
+		background-color: #8f8f8f;
+		color: #FFFFFF;
+		font-weight: bold;
+		padding: 10px 10px 7px;
+		font-size: 100%;
+	}
+	.result-box table td:last-child {
+		border-bottom: none;
+	}
+	.result-box td:nth-child(3) {
+		font-size: 90%;
+	}
+	.result-box table td:nth-child(3) br {
+		display: none;
+	}
+	.result-box table td:before {
+		content: attr(label)"：";
+		display: inline-block;
+		/*padding-left: 15px;*/
+		height: 100%;
+	} 
+	.result-box .zoned-btn {
+		width: 46%;
+	}
+}
+@media screen and (max-width:480px) {
+	.table-group-height {
+		width: 100%;
+	}
+}
+
+
+/*03---IT360-問與答---------------------------------------*/
+
+.qa-max-width{
+	width: 75%;
+}
+
+
+/*問答表格----------------------*/
+
+.qa-table tr td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.qa-table{
+	width: 75%;
+	margin-left: 20px;
+}
+
+
+.q-txt-set{
+	font-size: calc(.5vw + 16px);
+	color: #081c94;
+	font-weight: bold;
+	letter-spacing: 1px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.q-txt-set.w01{
+	width: 10%;
+}
+
+.q-txt-set.w02{
+	width: 90%;
+}
+
+.a-txt-set{
+	font-size: calc(.3vw + 14px);
+	color: #1a1a1a;
+	font-weight: normal;
+	letter-spacing: 1px;
+	vertical-align: top;
+}
+
+.a-txt-set.w01{
+	width: 10%;
+}
+
+.a-txt-set.w02{
+	width: 90%;
+}
+
+
+/*分類區塊----------------------*/
+
+.type-border{
+	width: 95%;
+	border: 1px solid #ee7800;
+	border-radius: 2px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.type-txt-set{
+	font-size: calc(.4vw + 20px);
+	color: #ee7800;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding-left: 30px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.type-img{
+	background-image: url(../images/qa-plus.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;
+	width: 28px;
+	height: 31px;
+	margin-top: 2px;
+}
+
+/*駐點-------*/
+
+.type-border.focus{
+	border: 3px solid #ee7800;
+}
+
+.type-border.focus .type-txt-set{
+	font-weight: bold;
+}
+
+.type-border.focus .type-img{
+	background-image: url(../images/qa-less.png);
+}
+
+
+
+
+
+
+/*線上諮詢區塊-------------------------------------------*/
+
+/*標題新增色碼----*/
+.center-title-line.dpblue{
+	border-bottom-color: #0a3866;
+}
+
+.center-title.dpblue{
+	color: #0a3866;
+}
+
+.center-title-line02.dpblue{
+	background-color: #0a3866;
+}
+
+/*--------------*/
+
+.online-ask-bg{
+	background-color: #eef1f6;
+}
+
+.online-ask-max-width{
+	width: 75%;
+}
+
+.ask-txt{
+	width: 80%;
+	font-size: calc(.3vw + 14px);
+	color: #0a3866;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 160%;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.row-width{
+	width: 80%;
+}
+
+.row-width.box{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.set-input{
+	width: 100%;
+	font-size: calc(.3vw + 14px);
+	color: #0a3866;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 2px;
+	border: 1px solid #b5b5b5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.text-box{
+	width: 100%;
+}
+
+/*按鈕--------*/
+
+.btn-txt-set{
+	width: 20%;
+	background-color: #ee981e;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.btn-txt-set:hover{
+	background-color:#FFA527;
+	transition: .2s;
+}
+
+
+
+.btn-txt{
+	font-size: calc(.3vw + 16px);
+	color: #ffffff;
+	letter-spacing: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1250px){
+	.online-ask-max-width{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.btn-txt-set{
+		width: 25%;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	.qa-max-width{
+		width: 98%;
+	}
+	
+	.btn-txt-set{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.btn-txt-set{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.btn-txt-set{
+		width: 80%;
+	}
+}
+
+
+
+
+
+/*check--多選框方形--設定--------*/
+
+.qa-ctxt{ /*文字位置設定*/
+	display: inline-block;
+	position: relative;
+	font-size: calc(.3vw + 13px);
+	line-height: 115%;
+	top: -8px;
+}
+
+.txt-center{
+	text-align: center;
+}
+
+
+.form-check{
+	display: inline-block;
+	width: auto; /*30px;*/
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	line-height: 200%;
+}
+
+.form-check label{
+	/*position: absolute;*/
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+	margin-left: -30px;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	padding-left: 2px;
+	padding-top: 2px;
+	margin-right: 10px;
+}
+
+.form-check label:after{
+	content: '\00a0';
+	display: inline-block;
+	border: 4px solid rgba(20,133,255,1);
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	border-top-width: 0;
+	border-right-width: 0;
+	opacity: 0;
+	transform: rotate(-50deg);
+	margin-left: -8px;
+}
+
+
+.form-check input[type=checkbox]:checked + label:after{
+	opacity: 1;
+}
+
+.form-check input[type=checkbox]{
+	opacity: 0;
+	position: relative; /*absolute;*/
+	z-index: 999;
+	left: 0;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	margin-top: -15px;
+	cursor: pointer;
+}
+
+
+
+/*04---新手上路---------------------------------------*/
+
+.new-st-video{
+	width: 80%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

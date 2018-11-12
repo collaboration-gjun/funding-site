@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+/* 文字字級CSS設定 */
+html {
+    font-size: 16px; /*網頁版版 1rem 基準*/
+}
+
+/* 標題*/
+h1, .h1 {
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 2px;	
+}
+h2, .h2 {
+	font-size: 29.6px;
+	font-weight: bold;	
+	letter-spacing: 2px;	
+}
+h3, .h3 {
+	font-size: 25.92px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+h4, .h4 {
+	font-size: 19.2px;
+	font-weight: bold;
+}
+h5, .h5 {
+	font-size: 15.68px;
+	font-weight: bold;
+}
+h6, .h6 {
+	font-size: 13.72px;
+	font-weight: bold;
+}
+/*文字段落*/
+p, .p {
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: calc(.2vw + 150%);
+}
+.text-color{
+	color: #4f4f4f;  
+}
+.bold {
+	font-weight: bold;	
+}
+.valid-msg {
+	display: inline-block;
+	color:red;
+	font-size: calc(.25vw + 14px);
+	line-height: 120%;
+	width: 100%;
+	text-align: left;
+	margin-top: 2px;
+	padding-left: 5%;
+	float: left;
+	letter-spacing: 1px;
+}
+@media screen and (max-width:1199px) {
+	/* 標題*/
+	h1, .h1 {
+		font-size:calc(.6vw + (1.8*16px));
+		font-weight: bold;
+		letter-spacing: 2px;	
+	}
+	h2, .h2 {
+		font-size:calc(.6vw + (1.4*16px));
+		font-weight: bold;	
+		letter-spacing: 2px;	
+	}
+	h3, .h3 {
+		font-size:calc(.6vw + (1.17*16px));
+		letter-spacing: 2px;
+		font-weight: bold;
+		margin-top: 15px;
+	}
+	h4, .h4 {
+		font-size:calc(.4vw + (.9*16px));
+		font-weight: bold;
+	}
+	h5, .h5 {
+		font-size:calc(.20vw + (0.83*16px));
+		font-weight: bold;
+	}
+	h6, .h6 {
+		font-size:calc(.25vw + (0.67*16px));
+		font-weight: bold;
+	}
+	/*文字段落*/
+	p, .p {
+		font-size:calc(.25vw + 18px);
+		letter-spacing: 2px;
+		line-height: calc(.2vw + 150%);
+	}
+}
+@media screen and (max-width:991px) {
+    html {
+        font-size: 14px; /*行動版 1rem 基準*/
+    }
+	/* 標題*/
+	h1, .h1 {
+
+	}
+	h2, .h2 {
+
+	}
+	h3, .h3 {
+
+	}
+	h4, .h4 {
+
+	}
+	h5, .h5 {
+
+	}
+	h6, .h6 {
+
+	}
+	/*文字段落*/
+	p, .p {
+		
+	}
+}
+@media screen and (max-width:767px) {
+	/* 標題*/
+	h1, .h1 {
+
+	}
+	h2, .h2 {
+
+	}
+	h3, .h3 {
+
+	}
+	h4, .h4 {
+
+	}
+	h5, .h5 {
+
+	}
+	h6, .h6 {
+
+	}
+	/*文字段落*/
+	p, .p {
+		
+	}
+}
+@media screen and (max-width:480px) {
+	/* 標題*/
+	h1, .h1 {
+
+	}
+	h2, .h2 {
+
+	}
+	h3, .h3 {
+
+	}
+	h4, .h4 {
+
+	}
+	h5, .h5 {
+
+	}
+	h6, .h6 {
+
+	}
+	/*文字段落*/
+	p, .p {
+		
+	}
+}
+@media screen and (max-width:320px) {
+	/* 標題*/
+	h1, .h1 {
+
+	}
+	h2, .h2 {
+
+	}
+	h3, .h3 {
+
+	}
+	h4, .h4 {
+
+	}
+	h5, .h5 {
+
+	}
+	h6, .h6 {
+
+	}
+	/*文字段落*/
+	p, .p {
+		
+	}
+}
