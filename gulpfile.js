@@ -133,7 +133,7 @@ gulp.task('watch', function () {
 
     gulp.watch('public/js/**/*.js', ['scripts', 'scripts:reload']);
 
-    gulp.watch('public/index.html').on('change', livereload.changed);
+    gulp.watch('public/**/*.html').on('change', livereload.changed);
 
     gulp.watch('public/css/**/*.scss', ['styles', 'styles:reload']);
 
