@@ -4,11 +4,12 @@
     width: 100%;
     height: auto;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
 
     @include breakpoint($ipad-pro) {
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .card {
@@ -139,7 +140,6 @@
         }
     }
 }
-
 
 .progress {
     border-radius: 15px;
