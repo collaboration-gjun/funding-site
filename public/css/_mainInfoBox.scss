@@ -1,0 +1,174 @@
+.mainInfoBox {
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+
+  .purchaseBox {
+    @include breakpoint($ipad) {
+      flex-direction: column;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: white;
+    position: relative;
+    padding: 15px;
+
+    .message-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1 1 33.33%;
+      height: auto;
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+      @include breakpoint($ipad) {
+        border-right: unset;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        flex-basis: 100%;
+      }
+
+      .humanNumber {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        color: #9b9b9b;
+        line-height: 24px;
+        padding: 15px;
+      }
+
+      .remainingTime {
+        @extend .humanNumber;
+      }
+
+      .questions {
+        @extend .humanNumber;
+      }
+    }
+
+    .price-wrap {
+      padding: 0 20px;
+      flex-basis: 33.33%;
+      @include breakpoint($ipad){
+        flex-basis: 100%;
+      }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-right: 1px solid rgba(0, 0, 0, .12);
+      @include breakpoint($ipad) {
+        border-right: unset;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .infoBOX {
+        flex-basis: 100%;
+        flex-direction: column;
+        text-align: center;
+
+        .info {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .price {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 16px;
+            line-height: 1.3;
+            color: #a2a2a2;
+            margin-bottom: 5px;
+
+            @media (max-width 1024px) {
+              flex: 0 1 100%;
+            }
+
+            .priceLeftTitle {
+              text-decoration: line-through;
+            }
+
+            .priceLeftNT {
+              color: red;
+              font-size: 20px;
+              padding: 0 15px;
+              line-height: 1;
+            }
+          }
+        }
+
+        .numDay {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          @include breakpoint($ipad){
+            display: block;
+          }
+          margin: 5px 0;
+
+          .progress-bar {
+            background-color: #f5a623;
+            background-image: none;
+
+            .progress {
+              height: 15px;
+              border-radius: 15px;
+            }
+          }
+
+          .remainingDay {
+            font-size: 16px;
+            line-height: 1.3;
+            color: #a2a2a2;
+          }
+        }
+
+        .PeopleQuantity {
+          font-size: 16px;
+          line-height: 1.3;
+          color: #1b1b1b;
+          text-align: center;
+          margin: 5px auto;
+        }
+      }
+    }
+
+
+
+    .purchase-wrap {
+      @include breakpoint($ipad){
+        flex-basis: 100%;
+      }
+      flex: 1 1 33.33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 40px;
+      .flex {
+        display: flex;
+        align-items: center;
+        @include breakpoint($ipad){
+          display: none;
+        }
+      }
+      .btn {
+        font-size: 1.375rem;
+        width: 100%;
+        color: white;
+        background-color: $orange-color;
+        @include breakpoint($ipad){
+          display: block;
+          position: fixed;
+          bottom: 10px;
+          width: 96%;
+          z-index: 999;
+        }
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.orange-header {
+  @include breakpoint($ipad){
+    display: none;
+  }
+}
+
+.nav-all {
+  @include breakpoint($ipad){
+    display: none;
+  }
+}
