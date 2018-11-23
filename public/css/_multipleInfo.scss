@@ -1,0 +1,35 @@
+.multipleInfo {
+  &__header {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+
+    li {
+      text-align: center;
+      flex: 1 1 20%;
+      padding-bottom: 15px;
+      border-bottom: 1px solid lighten($color_deep-gray, 30%);
+      &:hover {
+        cursor: pointer;
+        color: $orange-color;
+        border-bottom: 3px solid $orange-color;
+      }
+      &.active {
+        color: $orange-color;
+        border-bottom: 3px solid $orange-color;
+      }
+    }
+  }
+  &__body {
+
+  }
+  &__item {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+
+  }
+}

@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en" style='font-family: "Microsoft YaHei","Noto Sans TC", sans-serif;'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IT360</title>
+
+    <!--=========================== CSS ===========================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/vendor.min.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+
+    <!--=========================== JS ===========================-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/data-watermark.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            alert('很抱歉，目前本站瀏覽不支援IE9以下的瀏覽器，若看見版面跑掉，純屬正常狀況。');
+        });
+    </script>
+    <![endif]-->
+
+
+    <!--=========================== 思源黑體 ===========================-->
+    <!--<script src="https://use.typekit.net/mrp7iog.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>-->
+
+    <!--=========================== WOW ===========================-->
+    <script type="text/javascript" src="build/js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+</head>
+
+<body>
+<!-- test -->
+<div>
+    <!-- 導覽列 區塊 -->
+    <div class="orange-header">
+        <div class="orange-max-width center-block">
+            <div class="orange-float-r">
+                <div class="orange-txt-set white"><span class="oh-wline">│</span><a
+                        href="javascript:g_ShowHideJoin(true);">免費註冊</a><span
+                        class="oh-wline" id=>│</span><a href="javascript:g_ShowHideLogin(true);" class="">學/會員登入</a>
+                    <div class="orange-signin dropdown dropdown-base hidden"><a class="dropdown-toggle"
+                                                                                data-toggle="dropdown"
+                                                                                aria-expanded="false" id="lmenu07">
+                        <div>學/會員專區</div>
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="lmenu07" role="menu">
+                            <li><a href="#">點數卡產品兌換</a></li>
+                            <li><a href="#">APCS檢測專區</a></li>
+                            <li><a href="#">公告專區</a></li>
+                            <li><a href="#">我的課表</a></li>
+                            <li><a href="#">購買記錄</a></li>
+                            <li><a href="#">IT真人課程劃位</a></li>
+                            <li><a href="#">電腦分校課程劃位</a></li>
+                            <li><a href="#">外語真人課程劃位</a></li>
+                            <li><a href="#">取消劃位</a></li>
+                            <li><a href="#">課程檔案下載</a></li>
+                            <li><a href="#">教學平台測試</a></li>
+                            <li><a href="#">學習諮詢</a></li>
+                            <li><a href="#">常見問題</a></li>
+                            <li><a href="#">個資維護</a></li>
+                            <li><a href="#">上課權益查詢</a></li>
+                            <li><a href="#">忘記密碼</a></li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </div>
+                    <span class="oh-wline">│</span><a href="#">講師專區</a><span class="oh-wline">│</span>
+                </div>
+                <div class="oh-icon-group">
+                    <img src="build/images/search-icon.png" class="oh-img pad02"/> <img src="build/images/fb-icon.png"
+                                                                                        class="oh-img pad02"/> <img
+                        src="build/images/yt-icon.png" class="oh-img pad01 pad02"/>
+                </div>
+                <div class="buycar-group">
+                    <div class="orange-txt-set blue">$0.00 (0品項)</div>
+                    <img src="build/images/buycar-icon.png" class="oh-img pad01"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-all">
+        <nav class="navbar">
+            <div class="container-fluid content-width center-block">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header"><a href="#"><img class="logo" src="build/images/logo1.png" alt="IT360全方位課程"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#defaultNavbar1"
+                            aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span
+                            class="icon-bar b1"></span>
+                        <span class="icon-bar b2"></span> <span class="icon-bar b3"></span></button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="defaultNavbar1">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-dep01 hidden"></li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m01">上課去</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m08">募資<br class="br-hidden"/>課程</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m02">線上<br class="br-hidden"/>真人</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m03">影音<br class="br-hidden"/>課程</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m04">名師<br class="br-hidden"/>專區</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m05">合作<br class="br-hidden"/>開課</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m06">支援<br class="br-hidden"/>服務</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m07">i踢踢<br class="br-hidden"/>論壇</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- 導覽列初始化 -->
+
+    </div>
+    <!-- 導覽列(瘦子版) -->
+    <nav class="navigation navbar-default navbar-fixed-top">
+        <div class="container flex">
+            <div class="brand">
+                <img class="img-responsive" src="build/images/logo.svg" alt="it360">
+            </div>
+            <div class="icons">
+                <div class="searchToggleBtn"><i class="fal fa-search"></i></div>
+                <div class="shoppingCart">$0.00 (0品項)<i class="fal fa-shopping-cart"></i></div>
+                <div class="openBtn"><i class="fal fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile Nav menu -->
+    <div class="mobile-nav-menu subMenu ani">
+
+        <button class="navbutton linker" data-navurl="login.aspx?ReturnUrl=%2fsoeasyedu%2fDefault.aspx"
+                data-target="_self" type="button">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </button>
+
+        <div class="clearfix"></div>
+        <ul class="mobile-nav-menu-ul">
+            <!--li click   addClass active  -->
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-book"></i>上課去</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-headset"></i>線上真人</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-chalkboard-teacher"></i>名師專區</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-question-circle"></i>支援服務</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-hand-holding-usd"></i>募資課程</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-video"></i>影音課程</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-handshake"></i>合作開課</li>
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-comments"></i>i踢踢論壇</li>
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fal fa-users"></i>免費註冊</li>
+
+            <li class="mobile-nav-menu-li-title-1"><i class="fal fa-sign-in-alt"></i>學/會員登入</li>
+            <ul class="mobile-nav-menu-ul-2 animated fadeIn">
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">公告專區</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">我的課表</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">購買紀錄</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">支援服務</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">學習諮詢</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">個資維護</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">忘記密碼</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">登出</a></li>
+            </ul>
+
+
+            <div class="clearfix"></div>
+    </div>
+
+    <!-- 列印按鈕 -->
+    <div class="socialBtn">
+        <a href="#" target="_blank">
+            <div class="print">
+            </div>
+            <div class="print-text">列印<br/>所有<br/>課程</div>
+        </a>
+    </div>
+
+    <!-- 課程影片簡介 -->
+    <div class="movieAdvertisementTop">
+        <div class="movieAdvertisement"
+             style="background-image: url(build/images/raise_class/class-video-bg.png);"></div>
+        <div class="movieAdvertisementBox">
+            <div class="titleBox-toggle">&gt; 單元一覽</div>
+            <div class="container">
+                <h1>行銷360–玩社群賺現金</h1>
+                <div class="movieFramework">
+                    <div class="youtobeBox">
+                        <div class="iconIt360"><img src="build/images/raise_class/rinto-replay-logo.png"></div>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/btPnQCI9QQ4"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="titleBox">
+                        <div class="unitClass">
+                            31 段單元 5 項作業共 451 分鐘
+                            <div class="unitBtn">當前單元</div>
+                        </div>
+                        <div class="unitMarketing">
+                            <ul>
+                                <li class="active">
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-play"></span>
+                                        <span class="curriculum-item">課程介紹</span>
+                                        <span class="time">02:35</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                1.社群行銷現況與未來挑戰
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                2.網路社群資訊收集與分析判斷技法
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                3.社群行銷目標與KPI設定步驟
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                4.社群行銷行動戰略規劃實作
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                4.社群行銷行動戰略規劃實作
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                5.社群平台與行銷戰略整合應用
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                6.社群行銷經營成功案例分析
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                7.縮短品牌成功之社群作戰策略
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                8.360社群經營成功的心法&技法
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                9.媒體廣告在社群行銷上的布局
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                10.社群影響力與口碑工具應用技巧
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                11.社群活動如何替企業創造最佳效益
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                12.線上與線下活動整合案例解析
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                13.社群擴散力模型VS.行銷漏斗
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                14.精準掌握社群風向善用數據分析
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                15.社群行為洞察挖掘行銷機會
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                16.社群互動觀察與改善技巧
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                17.社群活耀度提升技巧
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                18.社群導流與導購變現實戰技巧
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                19.社群行銷定位與鐵粉提升技巧
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-content" href="">
+                                        <span aria-hidden="true" class="fa fa-lock"></span>
+                                        <span class="curriculum-item">
+                                                20.消費者社群行為洞察及因應技巧
+                                            </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 購買課程 -->
+    <div class="mainInfoBox">
+        <div class="container">
+            <div class="row">
+                <div class="purchaseBox">
+                    <div class="message-wrap">
+                        <div class="humanNumber">
+                            <img src="build/images/raise_class/rclass-icon01.png">
+                            <span>3,337位同學</span>
+                        </div>
+                        <div class="remainingTime">
+                            <img src="build/images/raise_class/rclass-icon02.png">
+                            <span>451分鐘</span>
+                        </div>
+                        <div class="questions">
+                            <img src="build/images/raise_class/rclass-icon03.png">
+                            <span>問題討論</span>
+                        </div>
+                    </div>
+                    <div class="price-wrap">
+                        <div class="infoBOX">
+                            <div class="info">
+                                <div class="price">
+                                    <div class="priceLeftTitle">NT$1000</div>
+                                    <div class="priceLeftNT">NT$500</div>
+                                </div>
+                            </div>
+                            <div class="numDay">
+                                <div class="progressBar col-md-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                             aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="remainingDay col-md-3">剩26天</div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="PeopleQuantity">已募資15/30</div>
+                        </div>
+                    </div>
+                    <div class="purchase-wrap">
+                        <div class="flex">
+                            <div class="star-rating">
+                                <i class="fas fa-star-half" data-rating="10"></i>
+                                <i class="fas fa-star-half" data-rating="9"></i>
+                                <i class="fas fa-star-half" data-rating="8"></i>
+                                <i class="fas fa-star-half" data-rating="7"></i>
+                                <i class="fas fa-star-half" data-rating="6"></i>
+                                <i class="fas fa-star-half" data-rating="5"></i>
+                                <i class="fas fa-star-half" data-rating="4"></i>
+                                <i class="fas fa-star-half" data-rating="3"></i>
+                                <i class="fas fa-star-half" data-rating="2"></i>
+                                <i class="fas fa-star-half" data-rating="1"></i>
+                                <input type="hidden" name="whatever1" class="rating-value" value="9.5">
+                            </div>
+                            <p>(66)</p>
+                        </div>
+
+                        <div class="btn">購買課程</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公布欄 -->
+    <section class="billboard">
+        <div class="container">
+            <div class="row">
+                <div class="flexContainer">
+                    <div class="amplifier">
+                        <img src="build/images/amplifier.svg" alt="" class="img-responsive">
+                        <h2>布告欄</h2>
+                    </div>
+                    <div class="billboard__content">
+                        <div class="billboard__items">
+                            <div class="billboard__item">
+                                <div class="titleHeader">募資截止日2018.12.17</div>
+                                <div class="emphasize">【募資特惠價最好康：超過1,000人搶購的行銷案例實務，手刀衝刺搶購去！】</div>
+                                <div class="contentBody">行銷業界專業技能、必備守則2019.01.23首場開課…</div>
+                            </div>
+                            <div class="billboard__item">
+                                <div class="titleHeader">募資截止日2018.12.17</div>
+                                <div class="emphasize">【募資特惠價最好康：超過1,000人搶購的行銷案例實務，手刀衝刺搶購去！】</div>
+                                <div class="contentBody">行銷業界專業技能、必備守則2019.01.23首場開課…</div>
+                            </div>
+                            <div class="billboard__item">
+                                <div class="titleHeader">募資截止日2018.12.17</div>
+                                <div class="emphasize">【募資特惠價最好康：超過1,000人搶購的行銷案例實務，手刀衝刺搶購去！】</div>
+                                <div class="contentBody">行銷業界專業技能、必備守則2019.01.23首場開課…</div>
+                            </div>
+                        </div>
+                        <div class="expandToggle">
+                            <i class="fas fa-caret-down"></i>
+                            <p>展開全部</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 課程總覽 -->
+    <section class="multipleInfo">
+        <div class="container">
+            <div class="row">
+                <ul class="multipleInfo__header">
+                    <li>為何報名此課程</li>
+                    <li>課程簡介</li>
+                    <li>課程評價</li>
+                    <li>問題討論</li>
+                    <li>作品成果</li>
+                </ul>
+                <div class="multipleInfo__body">
+                    <div class="multipleInfo__item">
+                        <div class="whySection">
+                            <div class="contentLeft">
+                                <div class="contentTop">
+                                    <ul>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>了解「社群行銷」的涵義、業界常用的專有名詞
+                                        </li>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>熟悉各種在社群上可運用的工具與行銷手法
+                                        </li>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>學會精準掌握社群風向的能力
+                                        </li>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>學會社群廣告如何布局
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>認識經營社群的棉角
+                                        </li>
+                                        <li><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>了解Facebook廣告的操作
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="contentBottom">
+                                    <div class="contentText">
+                                        社群能給一群有共同價值主張、等同趣味的人建立情感關聯，使得他們能夠產生點對點的交叉感染，並且可以協同行動產生疊加能量，從而合力創造出涌現價值，由淺入深帶大家了解經營社群的棉角，<span>社群裡的每一個<讚>都是現金機會你知道嗎?</span>本課程帶您從社群經濟價值中找到生存的入口。您非學不可!
+                                    </div>
+                                    <div class="contentChart">
+                                        <img src="build/images/raise_class/reg-img01.png"
+                                             class="img-responsive visible-lg visible-md visible-sm"
+                                             style="display: inline-block;">
+                                        <img src="build/images/raise_class/reg-img01-m.png"
+                                             class="img-responsive visible-xs"
+                                             style="display: inline-block;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidePanel">
+                                <div class="sidePanelBox">
+                                    <div class="teacherName">關於老師<span>朱翎</span></div>
+                                    <div class="teacherOutline">
+                                        <div class="teacherPhoto">
+                                            <img src="build/images/raise_class/class-tphoto.png"
+                                                 class="img-responsive img-circle"
+                                                 style="display: inline-block;">
+                                        </div>
+                                        <div class="teacherContent">
+                                            <div class="blogicon">
+                                                <img src="build/images/raise_class/r-fb-icon.png">
+                                                <img src="build/images/raise_class/r-yt-icon.png">
+                                                <img src="build/images/raise_class/r-home-icon.png">
+                                            </div>
+                                            <div class="blogContent">
+                                                由專業資訊設計背景團隊組成，提供從課程規劃、講稿編輯、視覺設計、市場行銷全方位服務，延續簡訊設計核心理念，相信好課程，也能讓知識飛得更遠。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscriptionBOx">
+                                    <div class="subscription">
+                                        <div class="subscriptionText">
+                                            <span><i class="fa fa-bookmark" aria-hidden="true"></i></span>訂閱講師課程
+                                        </div>
+                                    </div>
+                                    <div class="subscriptionicon">
+                                        分享到：
+                                        <img src="build/images/raise_class/r-share01.png">
+                                        <img src="build/images/raise_class/r-share02.png">
+                                        <img src="build/images/raise_class/r-share03.png">
+                                        <img src="build/images/raise_class/r-share04.png">
+                                        <img src="build/images/raise_class/r-share05.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multipleInfo__item">
+                        <div class="whySection">
+                            <div class="contentLeft">
+                                <div class="headline">課前資訊</div>
+                                <div class="courseInfo">
+                                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><strong>需要準備的工具/軟體</strong>（若購買課程前不清楚版本是否支援，請先留言與老師確認。）<br>
+                                    基本上不需要任何工具也能聽懂，但如果會想要有些完整的作業能分享，建議可以會這些：<br>
+                                    <ul>
+                                        <li>基礎繪圖軟體，不限定為 Photoshop（Ai, 小畫家, 甚至是 PowerPoint 都可以）</li>
+                                        <li>基礎 Excel 操作（會用 Excel 加減乘除算平均、畫長條圖、折線圖、做泡泡圖⋯等）</li>
+                                    </ul>
+                                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><strong>需要具備的背景知識</strong><br>
+                                    在數據分析這塊建議有最基礎的 Excel 操作知識（如上所說）會較好上手
+                                    <div class="foldBox"><span><i class="fa fa-caret-up" aria-hidden="true"></i></span>收回內容</div>
+                                </div>
+                                <div class="headline">課程簡介</div>
+                                <div class="subtitle"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>數位行銷課程學習路徑</div>
+                                <div class="graphPath">
+                                    <img src="build/images/raise_class/reg-img02.png" class="img-responsive visible-lg visible-md visible-sm"
+                                         style="display: inline-block;">
+                                    <img src="build/images/raise_class/reg-img02-m.png" class="img-responsive visible-xs" style="display: inline-block;">
+                                </div>
+                                <div class="subtitle2"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>精彩課程畫面：社群PDCA</div>
+                                <div class="graphPath">
+                                    <img src="build/images/raise_class/reg-img03.png" class="img-responsive visible-lg visible-md visible-sm"
+                                         style="display: inline-block;">
+                                    <img src="build/images/raise_class/reg-img03-m.png" class="img-responsive visible-xs" style="display: inline-block;">
+                                </div>
+                                <div class="subtitle2">
+                                    <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>社群廣告如何布局? 以FB廣告為例。
+                                </div>
+                                <div class="graphPath">
+                                    <img src="build/images/raise_class/reg-img04.png" class="img-responsive visible-lg visible-md visible-sm"
+                                         style="display: inline-block;">
+                                    <img src="build/images/raise_class/reg-img04-m.png" class="img-responsive visible-xs" style="display: inline-block;">
+                                </div>
+                                <div class="subtitle"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>FB廣告操作SOP</div>
+                                <div class="graphPath">
+                                    <img src="build/images/raise_class/reg-img05.png" class="img-responsive visible-lg visible-md visible-sm"
+                                         style="display: inline-block;">
+                                    <img src="build/images/raise_class/reg-img05-m.png" class="img-responsive visible-xs" style="display: inline-block;">
+                                </div>
+                                <div class="subtitle2"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>常見問題</div>
+                                <div class="questions">
+                                    <span>Q：請問在哪裡上課？上課時間？</span><br>
+                                    A：IT360網站所有課程皆採「線上課程」！真人上課，會通知您上課時間，透過平板、電腦在IT360上與老師面對面上課。<br>
+                                    <span>Q：我要如何購買募資課程？</span><br>
+                                    A：請先註冊成為IT360網站會員，再點擊網頁上【購買課程】按鈕，按購物車流程步驟進行結帳，即可在線上購買募資課程。<br>
+                                    <span>Q：募資課程購買後，可以看幾次？</span><br>
+                                    A：購買後，一年內可以無限制多次，一直看、一直看、一直看！<br>
+                                    <span>Q：可以問老師問題嗎？</span><br>
+                                    A：可以！每個課程皆設有「問題討論」留言區，可以將自己的問題留言給老師，老師皆會盡速來IT360上回答你的問題。<br>
+                                    <span>Q：還有其他問題？</span><br>
+                                    A：可以到「支援服務」看看，或是直接於「學習諮詢」留下聯絡資料，將有課程管理師為您服務。
+                                </div>
+                            </div>
+                            <div class="sidePanel">
+                                <div class="sidePanelBox">
+                                    <div class="teacherName">關於老師<span>朱翎</span></div>
+                                    <div class="teacherOutline">
+                                        <div class="teacherPhoto">
+                                            <img src="build/images/raise_class/class-tphoto.png" class="img-responsive img-circle"
+                                                 style="display: inline-block;">
+                                        </div>
+                                        <div class="teacherContent">
+                                            <div class="blogicon">
+                                                <img src="build/images/raise_class/r-fb-icon.png">
+                                                <img src="build/images/raise_class/r-yt-icon.png">
+                                                <img src="build/images/raise_class/r-home-icon.png">
+                                            </div>
+                                            <div class="blogContent">由專業資訊設計背景團隊組成，提供從課程規劃、講稿編輯、視覺設計、市場行銷全方位服務，延續簡訊設計核心理念，相信好課程，也能讓知識飛得更遠。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscriptionBOx">
+                                    <div class="subscription">
+                                        <div class="subscriptionText">
+                                            <span><i class="fa fa-bookmark" aria-hidden="true"></i></span>訂閱講師課程
+                                        </div>
+                                    </div>
+                                    <div class="subscriptionicon">
+                                        分享到：
+                                        <img src="build/images/raise_class/r-share01.png">
+                                        <img src="build/images/raise_class/r-share02.png">
+                                        <img src="build/images/raise_class/r-share03.png">
+                                        <img src="build/images/raise_class/r-share04.png">
+                                        <img src="build/images/raise_class/r-share05.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multipleInfo__item">
+                        <div class="ratingSection">
+                            <div class="ratingPanel">
+
+                                <div class="ratingTotal">共 57 則評價
+                                    <ul class="startRating">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="createCommentPanel">
+                                    <div class="createCommentPanel__header">
+                                        <div class="logoTitle">
+                                            <img src="build/images/logo.svg" alt="" class="img-responsive">
+                                            <div class="title">課程評價</div>
+                                        </div>
+                                        <div class="makeRating">
+                                            <h2>星等 </h2>
+                                            <div class="star-rating">
+                                                <i class="fas fa-star-half" data-rating="10"></i>
+                                                <i class="fas fa-star-half" data-rating="9"></i>
+                                                <i class="fas fa-star-half" data-rating="8"></i>
+                                                <i class="fas fa-star-half" data-rating="7"></i>
+                                                <i class="fas fa-star-half" data-rating="6"></i>
+                                                <i class="fas fa-star-half" data-rating="5"></i>
+                                                <i class="fas fa-star-half" data-rating="4"></i>
+                                                <i class="fas fa-star-half" data-rating="3"></i>
+                                                <i class="fas fa-star-half" data-rating="2"></i>
+                                                <i class="fas fa-star-half" data-rating="1"></i>
+                                                <input type="hidden" name="whatever1" class="rating-value" value="9.5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="createCommentPanel__body">
+                                        <div class="user"><img src="build/images/user/3b.jpg" alt=""
+                                                               class="img-responsive"></div>
+                                        <div class="createComment">
+                                            <div class="createComment__title">您對此課程的評價</div>
+                                            <textarea name="comment" id="" cols="30" rows="5"
+                                                      placeholder="嚴禁回覆文不對題、蓄意攻訐、挑起戰火、惡意洗版或灌水、廣告文等的內容，本站將直接刪除貼文以示警告，如屢犯將予以停權。"></textarea>
+                                            <div class="count">0 個字</div>
+                                            <div class="bottom">
+                                                <div class="btn">留言</div>
+                                                <div class="btn btn-upload">上圖</div>
+                                                <div class="instruction">發文若附加圖片，最多6張JPEG圖檔，單一檔案最大2MB，請盡量上傳正方型圖檔讓顯示更漂亮
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="comments">
+                                    <div class="comment">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                            <div class="user__name">Jane</div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="comment__header">
+                                                <div class="title">很不錯～超推薦！</div>
+                                                <ul class="starRating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="comment__body">
+                                                <p>其實很怕漏漏長又一堆標題不實用的內容，但這次課程設計得非常用心～連語速旁白都簡潔俐落，內容豐富更不用說了～強推強推！</p>
+                                                <div class="recordTime">3 天前</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                            <div class="user__name">Jane</div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="comment__header">
+                                                <div class="title">很不錯～超推薦！</div>
+                                                <ul class="starRating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="comment__body">
+                                                <p>其實很怕漏漏長又一堆標題不實用的內容，但這次課程設計得非常用心～連語速旁白都簡潔俐落，內容豐富更不用說了～強推強推！</p>
+                                                <div class="recordTime">3 天前</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                            <div class="user__name">Jane</div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="comment__header">
+                                                <div class="title">很不錯～超推薦！</div>
+                                                <ul class="starRating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="comment__body">
+                                                <p>其實很怕漏漏長又一堆標題不實用的內容，但這次課程設計得非常用心～連語速旁白都簡潔俐落，內容豐富更不用說了～強推強推！</p>
+                                                <div class="recordTime">3 天前</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="sidePanel">
+                                <div class="subscriptionPanel">
+                                    <p>還在猶豫嗎？不如先收藏起來吧！</p>
+                                    <div class="bookingBox">
+                                        <div>
+                                            <i class="fas fa-bookmark"></i>
+                                            <p>訂閱講師課程</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multipleInfo__item">
+                        <div class="QASecttion">
+                            <div class="QASecttion__items">
+                                <div class="QASortingItems"></div>
+                                <div class="QAItems">
+                                    <div class="QAItem">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="QAContent">
+                                            <div class="unit">第 51 單元</div>
+                                            <div class="Question">用jQuery實作購物清單 - 抓取 id 問題</div>
+                                            <div class="userInfo">
+                                                <div class="userName">潘威利</div>
+                                                <div class="recordTime">2 小時前</div>
+                                                <div class="like"><i class="fal fa-heart"></i> 0</div>
+                                                <div class="respond"><i class="fal fa-comment"></i> 0</div>
+                                            </div>
+                                        </div>
+                                        <div class="resolved">
+                                            解決中
+                                        </div>
+                                    </div>
+                                    <div class="QAItem">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="QAContent">
+                                            <div class="unit">第 51 單元</div>
+                                            <div class="Question">用jQuery實作購物清單 - 抓取 id 問題</div>
+                                            <div class="userInfo">
+                                                <div class="userName">潘威利</div>
+                                                <div class="recordTime">2 小時前</div>
+                                                <div class="like"><i class="fal fa-heart"></i> 0</div>
+                                                <div class="respond"><i class="fal fa-comment"></i> 0</div>
+                                            </div>
+                                        </div>
+                                        <div class="resolved">
+                                            解決中
+                                        </div>
+                                    </div>
+                                    <div class="QAItem">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="QAContent">
+                                            <div class="unit">第 51 單元</div>
+                                            <div class="Question">用jQuery實作購物清單 - 抓取 id 問題</div>
+                                            <div class="userInfo">
+                                                <div class="userName">潘威利</div>
+                                                <div class="recordTime">2 小時前</div>
+                                                <div class="like"><i class="fal fa-heart"></i> 0</div>
+                                                <div class="respond"><i class="fal fa-comment"></i> 0</div>
+                                            </div>
+                                        </div>
+                                        <div class="resolved">
+                                            解決中
+                                        </div>
+                                    </div>
+                                    <div class="QAItem">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="QAContent">
+                                            <div class="unit">第 51 單元</div>
+                                            <div class="Question">用jQuery實作購物清單 - 抓取 id 問題</div>
+                                            <div class="userInfo">
+                                                <div class="userName">潘威利</div>
+                                                <div class="recordTime">2 小時前</div>
+                                                <div class="like"><i class="fal fa-heart"></i> 0</div>
+                                                <div class="respond"><i class="fal fa-comment"></i> 0</div>
+                                            </div>
+                                        </div>
+                                        <div class="resolved">
+                                            解決中
+                                        </div>
+                                    </div>
+                                    <div class="QAItem">
+                                        <div class="user">
+                                            <img src="build/images/user/user_01.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="QAContent">
+                                            <div class="unit">第 51 單元</div>
+                                            <div class="Question">用jQuery實作購物清單 - 抓取 id 問題</div>
+                                            <div class="userInfo">
+                                                <div class="userName">潘威利</div>
+                                                <div class="recordTime">2 小時前</div>
+                                                <div class="like"><i class="fal fa-heart"></i> 0</div>
+                                                <div class="respond"><i class="fal fa-comment"></i> 0</div>
+                                            </div>
+                                        </div>
+                                        <div class="resolved">
+                                            解決中
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="createCommentPanel">
+                                    <div class="createCommentPanel__header">
+                                        <div class="logoTitle">
+                                            <img src="build/images/logo.svg" alt="" class="img-responsive">
+                                            <div class="title">加入討論</div>
+                                        </div>
+                                    </div>
+                                    <div class="createCommentPanel__body">
+                                        <div class="user"><img src="build/images/user/3b.jpg" alt=""
+                                                               class="img-responsive"></div>
+                                        <div class="createComment">
+                                            <textarea name="comment" cols="30" rows="5"
+                                                      placeholder="嚴禁回覆文不對題、蓄意攻訐、挑起戰火、惡意洗版或灌水、廣告文等的內容，本站將直接刪除貼文以示警告，如屢犯將予以停權。"></textarea>
+                                            <div class="count">0 個字</div>
+                                            <div class="bottom">
+                                                <div class="btn">留言</div>
+                                                <div class="btn btn-upload">上圖</div>
+                                                <div class="instruction">發文若附加圖片，最多6張JPEG圖檔，單一檔案最大2MB，請盡量上傳正方型圖檔讓顯示更漂亮
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="sidePanel">
+                                <div class="boxPanel">
+                                    <div class="boxPanel__header">
+                                        <p>喜歡這堂課嗎？</p>
+                                    </div>
+                                    <div class="boxPanel__body">
+                                        <p>一起上課，參與老師同學的討論吧！
+                                            讓你認識興趣相投的朋友，
+                                            還能隨時向老師問問題～
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multipleInfo__item">test5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer 區塊 -->
+    <div class="footer-all">
+        <div class="container-fluid footer-menu">
+            <!-- 第一層 -->
+            <div class="row content-width">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="fmenu-dep00 visible-xs visible-sm hidden-md">&nbsp;</div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">網站地圖</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">線上真人</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">影音課程</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">名師專區</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">合作開課</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">支援服務</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fmenu-dep01"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">學/會員專區</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">上課去</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">學/會員登入</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#"
+                                                                                            target="_blank">Q&A</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item hidden"><a href="#"
+                                                                                                   target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block hidden-md"></div>
+                        <div class="fmenu-dep00 visible-xs visible-sm hidden-md">&nbsp;</div>
+                        <div class="fmenu-dep01 hidden-xs hidden-sm"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">友站連結</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠線上真人</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠電腦線上真人</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠國中狀元王</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠電腦</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠美語</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fmenu-dep01"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">其他</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">個資條款</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">Facebook</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">YouTube</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-0"><div class="fmenu-dep00">&nbsp;</div></div>-->
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <!-- 第三層 -->
+        <div class="container-fluid footer-info">
+            <div class="row content-width">
+                <div class="col-md-12 finfo-list">
+                    <div class="finfo-item m01"><a href="index.html"><img src="build/images/logo2.png"></a></div>
+                    <div class="finfo-dep00 hidden-xs">
+                        <div class="finfo-dep01">&nbsp;</div>
+                    </div>
+                    <div class="finfo-item m02">
+                        <div>產品諮詢專線 <span>│</span> 週一至週日 13:30~22:00</div>
+                        <div class="mtel">02-2361-1198</div>
+                        <div>技術服務專線 <span>│</span> 週一至週日 09:00~22:00</div>
+                        <div class="mtel">02-2557-6707
+                            <div>(市話撥打)</div>
+                        </div>
+                    </div>
+                    <div class="finfo-dep00 hidden-xs hidden-sm hidden-md">
+                        <div class="finfo-dep01">&nbsp;</div>
+                    </div>
+                    <div class="finfo-item m03"><span>本網站已經依據台灣網站內容分級管理</span> <span>巨匠電腦 版權所有</span><br/>
+                        <span>&copy;2018 Gjun information Co., Ltd.</span> <span>All Rights Reserved</span><br/>
+                        學員服務信箱：PConlineHelp@pcschool.com.tw
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(function () {
+                var bottomTimer = -1,
+                    bottomOpen = false;
+                var aniDuration = 'slow'; // 'slow'; // default : 400
+                var offsetY = 34;
+
+                var g_ShowFreeForm = function () {
+                    $('#freeForm').stop(true, true);
+
+                    if (bottomOpen) {
+                        $('#freeForm').animate({
+                            bottom: -$('#freeForm').height() + offsetY
+                        }, aniDuration, function () {
+                            bottomOpen = false;
+                        });
+                    } else {
+                        $('#freeForm').animate({
+                            bottom: 0
+                        }, aniDuration, function () {
+                            bottomOpen = true;
+                        });
+                    }
+                };
+
+                $('#freeBtn').bind('click', g_ShowFreeForm);
+
+                function ScaleSlider() {
+                    if (!bottomOpen) {
+                        $('#freeForm').css('bottom', -$('#freeForm').height() + offsetY);
+                        setTimeout(function () {
+                            $('#freeForm').css('bottom', -$('#freeForm').height() + offsetY);
+                        }, 1000);
+                    }
+                }
+
+                //Scale slider after document ready
+                ScaleSlider();
+
+                //Scale slider while window load/resize/orientationchange.
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+
+            });
+        </script>
+    </div>
+
+
+    <!-- 會員註冊成功再次登入區塊 -->
+
+
+    <!-- 免費註冊區塊 -->
+
+
+    <!-- gotop -->
+    <a href="#title">
+        <div class="gotop">
+            <div>
+                <div>
+                    <div class="arr01"></div>
+                    <div class="arr02"></div>
+                </div>
+            </div>
+            <span class="gotop-txt center-block"><span>TOP</span></span>
+        </div>
+    </a>
+</div>
+
+
+<script type="application/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="application/javascript" src="build/js/templates.js"></script>
+<script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
+<script type="application/javascript" src="build/js/scripts.min.js"></script>
+
+</body>
+
+</html>

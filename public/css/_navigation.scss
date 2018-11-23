@@ -1,0 +1,28 @@
+nav.navigation {
+  display: none;
+  @include breakpoint($ipad) {
+    display: block;
+  }
+  .flex {
+    display: flex;
+    .brand {
+
+      flex: 1 1 auto;
+      img {
+        padding: 5px 15px 5px 0;
+        height: 50px;
+      }
+    }
+    .icons {
+      font-size: 1.25rem;
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 75%;
+      justify-content: space-between;
+      align-items: center;
+      .openBtn {
+        cursor: pointer;
+      }
+    }
+  }
+}
