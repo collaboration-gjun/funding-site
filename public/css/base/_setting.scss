@@ -1,6 +1,7 @@
 $ipad-mini: max-width 425px;
 $ipad: max-width 768px;
 $ipad-pro: max-width 1024px;
+
 $orange-color: #f5a623;
 $it360-orange:#FF8920;
 $dark-orange-color: #dd8e0e;
@@ -9,6 +10,10 @@ $color_login: #f39800;
 $color_deep-gray: #707070;
 $color_logo_red: #e13221;
 $body: #f3f3f3;
+
+$shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.2);
+$lineName: solid 1px #dadada;
+$radius: 5px;
 
 body {
   background: $body;

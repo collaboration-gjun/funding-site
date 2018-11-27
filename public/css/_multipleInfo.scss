@@ -5,6 +5,9 @@
     justify-content: space-around;
     align-items: center;
     padding-left: 0;
+    @include breakpoint($ipad){
+      align-items: flex-end;
+    }
 
     li {
       text-align: center;

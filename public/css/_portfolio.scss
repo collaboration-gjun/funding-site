@@ -1,0 +1,314 @@
+
+
+.webPath {
+    margin-top: 60px;
+    margin-bottom: -60px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.achivementSection {
+    display: flex;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4a4a4a;
+    flex-direction: row;
+    margin: 60px 0;
+
+    @include breakpoint (max-width 768px) {
+        flex-direction: column;
+    }
+
+    .contentLeft {
+        display: flex;
+        flex: 1 1 70%;
+        flex-direction: column;
+        margin: 15px;
+
+        @include breakpoint (max-width 768px) {
+            flex: 1 1 100%;
+            order: 2;
+        }
+
+        .headline {
+            font-size: 34px;
+            line-height: 42px;
+            border-bottom: $lineName;
+            padding: 13px 10px;
+            margin-bottom: 15px;
+        }
+
+        .worksContent {
+            padding: 0 10px;
+            line-height: 30px;
+
+            span {
+                font-size: 14px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 60px 0;
+            }
+
+            .worksContentText {
+                margin-bottom: 30px;
+            }
+        }
+
+        .opinion {
+            margin-bottom: 30px;
+
+            span {
+                color: #e38b00;
+            }
+        }
+
+        .portfolioBox {
+            display: flex; // flex-direction: row;
+            margin: 30px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .portfolioContent {
+                display: flex;
+                flex: 1 1 32.33%;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 35px;
+                padding: 5px;
+                &:last-child {
+                    @include breakpoint(991px){
+                        flex-grow: 0;
+                    }
+                }
+                @include breakpoint(769px 991px){
+                    flex: 1 1 48%;
+                }
+                @include breakpoint($ipad){
+                    flex: 1 1 50%;
+                }
+
+                @include breakpoint (max-width 425px) {
+                    flex: 1 1 100%;
+                }
+
+                .portfolioPic {
+                    display: inline-flex;
+                    height: 220px;
+                    width: auto;
+                    margin: 0;
+                    padding: 0;
+                    border: $lineName;
+                    background-position: center top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .portfolioName {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 15px 0;
+
+                    .student {
+                        display: flex;
+                        flex: 0 1 15%;
+                        align-items: center;
+
+                        img {
+                            display: inline-flex;
+                            width: 40px;
+                            border-radius: 50%;
+                            border: $lineName;
+                            padding: 2px;
+                            background-color: white;
+                        }
+                    }
+
+                    .porfolioTitle {
+                        flex-direction: column;
+                        padding-left: 10px;
+                        flex: 0 1 85%;
+
+                        .titleBox {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 200px;
+
+                            @include breakpoint (max-width 1024px) {
+                                width: 150px;
+                            }
+
+                            @include breakpoint (max-width 768px) {
+                                width: 300px;
+                            }
+
+                            @include breakpoint (max-width 425px) {
+                                width: 100%;
+                            }
+                        }
+
+                        .nameBox {
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidePanel {
+        display: flex;
+        flex: 1 1 30%;
+        flex-direction: column;
+
+        @include breakpoint (max-width 768px) {
+            flex: 1 1 100%;
+            order: 1;
+        }
+
+        .sidePanelBox {
+            display: flex;
+            box-shadow: $shadow;
+            flex-direction: column;
+            border-radius: $radius;
+            background-color: white;
+            font-size: 14px;
+            margin: 15px;
+            padding: 25px;
+
+            .teacherName {
+                padding: 15px;
+                font-size: 24px;
+                line-height: 36px;
+                border-bottom: $lineName;
+                text-align: center;
+
+                span {
+                    font-size: 28px;
+                    font-weight: 700;
+                    padding: 0 15px;
+                }
+            }
+
+            .teacherOutline {
+                display: flex;
+                padding: 30px 0;
+                flex-direction: column;
+
+                .teacherPhoto {
+                    margin: 0 auto;
+                }
+
+                .teacherContent {
+                    display: flex;
+                    padding: 15px 0;
+                    flex-direction: column;
+                    margin-top: 30px;
+
+                    .blogicon {
+                        flex-direction: row;
+                        margin: 0 auto;
+
+                        img {
+                            margin: 5px;
+                        }
+                    }
+                }
+
+                .blogContent {
+                    margin-top: 15px;
+                    padding: 0 30px;
+                }
+            }
+
+        }
+
+        .schoolAssignmentBOx {
+            display: flex;
+            box-shadow: $shadow;
+            flex-direction: column;
+            border-radius: $radius;
+            background-color: white;
+            margin: 15px;
+
+            .schoolAssignment {
+                padding: 19px 0;
+                border-bottom: $lineName;
+                text-align: center;
+            }
+
+            .schoolAssignmentPic {
+                display: flex;
+                margin: 15px 0;
+                padding: 15px;
+                flex-direction: row;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .schoolWorksPic {
+                    display: flex;
+                    flex: 0 1 33.33%;
+                    padding: 0 5px;
+                    height: 80%;
+                    align-items: center;
+                }
+            }
+
+            .explain {
+                padding: 25px;
+
+                .explainText {
+                    font-size: 14px;
+                }
+            }
+
+            .explainOption {
+                margin: 15px 0;
+            }
+        }
+
+        .subscriptionBOx {
+            display: flex;
+            box-shadow: $shadow;
+            flex-direction: column;
+            border-radius: $radius;
+            margin-top: 15px;
+            background-color: white;
+            margin: 15px;
+
+            .subscription {
+                padding: 25px;
+                border-bottom: $lineName;
+
+                .subscriptionText {
+                    font-size: 23px;
+                    line-height: 30px;
+                    border: solid 2px #9b9b9b;
+                    padding: 15px;
+                    text-align: center;
+
+                    span {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .subscriptionicon {
+                flex-direction: row;
+                margin: 0 auto;
+                padding: 30px 0;
+
+                img {
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}

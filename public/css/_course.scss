@@ -12,141 +12,215 @@
         justify-content: space-between;
     }
 
-    .card {
-        position: relative;
+    .cardWrapper {
         flex: 0 1 23%;
-
+        background-color: white;
         @include breakpoint($ipad-pro) {
             flex: 0 1 47%;
             margin-bottom: 35px;
         }
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
-
-        .top {
-            img {
-                width: 100%;
-                height: auto;
-            }
+        @include breakpoint($ipad) {
+            flex: 0 1 100%;
+            margin-bottom: 0;
+            padding: 0 1rem;
         }
-
-        .body {
+        .card {
+            position: relative;
             display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-            height: 100%;
             flex-direction: column;
-            padding: 20px;
-
-            .title {
-                font-size: 24px;
-                line-height: 1.3;
-                color: #4a4a4a;
+            justify-content: space-between;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            @include breakpoint($ipad) {
+                flex-direction: row;
+                background-color: white;
+                box-shadow: unset;
             }
 
-            .progressInfo {
+            .top {
+                flex: 1 2 100%;
+                @include breakpoint($ipad){
+                    padding: 1rem 0 0 0;
+
+                    flex: 1 1 30%;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .body {
                 display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                height: 100%;
                 flex-direction: column;
+                padding: 20px;
+                @include breakpoint($ipad){
+                    padding: 1rem;
+                    flex: 1 1 60%;
+                }
 
-                .info {
+                .title {
+                    font-size: 24px;
+                    line-height: 1.3;
+                    color: #4a4a4a;
+                    @include breakpoint($ipad){
+                        font-size: 1rem;
+                    }
+                }
+
+                .progressInfo {
                     display: flex;
-                    flex-direction: row;
-                    margin-top: 30px;
+                    flex-direction: column;
 
-                    @media (max-width 1024px) {
-                        flex-direction: column;
+                    .progressBar {
+                        @include breakpoint($ipad){
+                            display: none;
+                        }
+                        .progress {
+                            border-radius: 15px;
+                            margin: 5px 0;
+
+                            .progress-bar {
+                                background-color: #f5a623;
+                                background-image: none;
+
+                            }
+                        }
                     }
 
-                    .price {
-                        flex: 0 1 70%;
+                    .info {
                         display: flex;
                         flex-direction: row;
-                        font-size: 16px;
-                        line-height: 1.3;
-                        color: #a2a2a2;
-                        margin-bottom: 5px;
 
-                        @media (max-width 1024px) {
-                            flex: 0 1 100%;
+                        @include breakpoint (max-width 1024px) {
+                            flex-direction: column;
+
+                        }
+                        @include breakpoint($ipad){
+                            justify-content: space-between;
                         }
 
-                        .priceLeftTitle {
-                            text-decoration: line-through;
+                        .price {
+                            flex: 0 1 70%;
+                            display: flex;
+                            flex-direction: row;
+                            font-size: 16px;
+                            line-height: 1.3;
+                            color: #a2a2a2;
+                            margin-bottom: 5px;
+
+                            @include breakpoint (max-width 1024px) {
+                                flex: 0 1 100%;
+                            }
+
+                            .priceLeftTitle {
+                                text-decoration: line-through;
+                                @include breakpoint($ipad){
+                                    font-size: .8rem;
+                                }
+                            }
+
+                            .priceLeftNT {
+                                color: red;
+                                font-size: 20px;
+                                padding: 0 15px;
+                                line-height: 1;
+                                @include breakpoint($ipad){
+                                    font-size: 1.2rem;
+                                    padding: 0 0 0 5px;
+                                }
+                            }
                         }
 
-                        .priceLeftNT {
-                            color: red;
-                            font-size: 20px;
-                            padding: 0 15px;
-                            line-height: 1;
+                        .remainingDays {
+                            flex: 0 1 30%;
+                            font-size: 16px;
+                            line-height: 1.3;
+                            color: #a2a2a2;
+                            text-align: right;
+
+                            @media (max-width 1024px) {
+                                flex: 0 1 100%;
+                                text-align: left;
+                            }
+                            @include breakpoint($ipad){
+                                font-size: .8rem;
+                            }
+
                         }
                     }
 
-                    .remainingDays {
-                        flex: 0 1 30%;
-                        font-size: 16px;
-                        line-height: 1.3;
+                    .numPeople {
+                        font-size: 18px;
+                        line-height: 1.0;
                         color: #a2a2a2;
-                        text-align: right;
-
-                        @media (max-width 1024px) {
-                            flex: 0 1 100%;
-                            text-align: left;
+                        text-align: center;
+                        margin: 5px 0;
+                        @include breakpoint($ipad){
+                            display: none;
                         }
-
                     }
-                }
-
-                .numPeople {
-                    font-size: 18px;
-                    line-height: 1.0;
-                    color: #a2a2a2;
-                    text-align: center;
-                    margin: 5px 0;
                 }
             }
+
+            .btnCourse {
+                width: 100%;
+                height: 35px;
+                background-color: #f5a623;
+                font-size: 18px;
+                line-height: 1.3;
+                color: white;
+                text-align: center;
+                padding: 9px 0;
+                @include breakpoint($ipad){
+                    display: none;
+                }
+            }
+
+            .teacherCourse {
+                position: absolute;
+                top: -28px;
+                left: 5px;
+                z-index: 1;
+                @include breakpoint($ipad){
+                    display: none;
+                }
+
+                img {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    height: 56px;
+                    width: 56px;
+                    border: 2px solid white;
+                    display: inline-block;
+                    box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+                }
+            }
+
+
         }
-
-        .btnCourse {
-            width: 100%;
-            height: 35px;
-            background-color: #f5a623;
-            font-size: 18px;
-            line-height: 1.3;
-            color: white;
-            text-align: center;
-            padding: 9px 0;
-        }
-
-        .teacherCourse {
-            position: absolute;
-            top: -28px;
-            left: 5px;
-            z-index: 1;
-
-            img {
-                border-radius: 50%;
+        .progress--mobile {
+            display: none;
+            @include breakpoint($ipad){
+                background-image: unset;
+                margin-top: 0px;
+                display: block;
+                height: 6px;
+                margin-bottom: 15px;
                 overflow: hidden;
-                height: 56px;
-                width: 56px;
-                border: 2px solid white;
-                display: inline-block;
-                box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+                background-color: #dadada;
+                border-radius: 0px;
+                box-shadow: unset;
+            }
+            .progress-bar {
+                box-shadow: unset;
             }
         }
     }
 }
 
-.progress {
-    border-radius: 15px;
-    margin: 5px 0;
-}
 
-.progress-bar {
-    background-color: #f5a623;
-    background-image: none;
-}
+

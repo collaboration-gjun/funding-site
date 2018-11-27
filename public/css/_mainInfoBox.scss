@@ -150,9 +150,15 @@
       .flex {
         display: flex;
         align-items: center;
+        color: $orange-color;
+        p {
+          margin-bottom: 0;
+          color: #000;
+        }
         @include breakpoint($ipad){
           display: none;
         }
+
       }
       .btn {
         font-size: 1.375rem;
