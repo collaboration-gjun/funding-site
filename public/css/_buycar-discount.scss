@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+.bc-width01{
+	width: 42%;
+	padding-left: 61px;
+}
+
+.bc-width02{
+	width: 14%;
+}
+
+.bc-width03{
+	width: 22%;
+}
+
+.bc-width04{
+	width: 14%;
+}
+
+.bc-width05{
+	width: 8%;
+}
+
+
+.input-txt{
+	display: inline-block;
+	width: calc(100% - ((.3vw + 14px)*2));
+	font-size: calc(.3vw + 14px);
+	color: #2e2e2e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*padding-left: 5px;*/
+	
+}
+
+.input-txt.useonly{
+	background-color: #DFDFDF;
+	color: #B5B5B5;
+	border: 1px solid #A9A9A9;
+	cursor: default;
+}
+
+
+.use-btn-txt{
+	display: inline-block;
+	font-size: calc(.3vw + 14px);
+	color: #ffffff;
+	text-align: center;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.use-btn{
+	width: 30%;
+	background-color: #ee7800;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.use-btn:hover{
+	background-color: #FF9021;
+}
+
+.use-btn.no-use{
+	background-color: #e53935;
+}
+
+.use-btn.no-use:hover{
+	background-color: #FF4946;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px){
+	.input-txt{
+		width: 100%;
+	}
+	
+	.use-btn{
+		width: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 600px){
+	.buycar-txt{
+		letter-spacing: 0px;
+	}
+}
+
+
+
+
+/*購物車表格----*/
+
+.buycar-box table {
+	border: 0px none;
+	width: 100%;
+}
+.buycar-box tbody {
+	color:#4f4f4f;		
+	line-height: 120%;
+}
+.buycar-box th, .buycar-box td {
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #a5a4a5;
+	border-right: 1px solid #a5a4a5;
+	border-bottom: 1px solid #a5a4a5;
+	height: 60px;		
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3px;
+	padding-right: 3px;
+	/*word-break: break-all;*/
+	word-wrap: break-word;
+	display: table-cell;
+	line-height: 120%; /*140%;*/
+	font-weight: 400;
+}
+.buycar-box table tr th:last-child, .buycar-box table tr td:last-child {
+	border-right-style: block;
+}
+.buycar-box table:nth-child(2n) tr {
+	background-color: #ffffff;
+}
+.buycar-box table:nth-child(2n+1) tr {
+	background-color: #ffffff;
+}
+.buycar-box table:nth-child(1) tr {
+	background-color: #8f8f8f; /*#8f8f8f;*/ 
+  	color:#FFFFFF;
+}
+
+/*.result-box td:nth-child(3) {
+	font-size: 73%;
+}*/
+
+.buycar-box td span {
+	display: inline-block;
+}
+
+.buycar-box .gray, .buycar-box .gray {
+    font-size: calc(.2vw + 12px);
+    letter-spacing: 0px;
+    color: #646464;
+    text-decoration: line-through;
+    /*padding-left: 8px;
+    padding-right: 8px;*/
+}
+
+.stable-w03 .title, .vstable-w03 .title {
+    font-size: 80%;
+}
+.stable-w04 {
+    word-break: break-all;
+}
+
+
+@media screen and (max-width:767px) {
+	
+	.buycar-txt-icon{
+		float: right;
+	}
+	
+	.buycar-txt{
+		text-align: left;
+		padding-top: 10px;
+		line-height: 135%;
+	}
+	
+	.buycar-table tr > td {
+		border: none;
+	}
+	
+	.input-txt{
+		margin-top: 8px;
+		width: calc(100% - 40%);
+	}
+	
+	.use-btn{
+		width: 20%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	
+	
+	
+	
+	/*表格相關-------------*/
+	
+	.buycar-box table {			
+		margin-bottom: 15px;		
+		border-radius: 5px 5px 1px 1px;
+		box-shadow: 0px 5px 20px -10px gray;
+		overflow: hidden;	
+		display: inline-block;
+	}
+	.buycar-box tbody {
+		line-height: 120%;
+	}
+	.buycar-box table:nth-child(1) {
+		display: none;
+	}	
+	.buycar-box table:nth-child(2n+1) tr {
+		background-color: #ffffff;
+	}
+	.buycar-box table td {
+		width: 100%;
+		display: inline-block;
+		text-align: left;
+		height:auto;
+		font-size: 90%;
+		padding: 8px 10px 5px;
+		border-right:none;
+		border-left: none;
+		border-bottom-color: rgba(255,255,255, .4);
+		border-bottom-style:solid;		
+	}
+	.buycar-box table td:first-child {
+		background-color: #F5F5F5;
+		color: #FFFFFF;
+		font-weight: bold;
+		padding: 10px 10px 7px;
+		font-size: 100%;
+		border: none;
+	}
+	.buycar-box table td:last-child {
+		border-bottom: none;
+	}
+	.buycar-box td:nth-child(3) {
+		font-size: 90%;
+	}
+	.buycar-box table td:nth-child(3) br {
+		display: none;
+	}
+	.buycar-box table td:before {
+		content: attr(label)"：";
+		display: inline-block;
+		/*padding-left: 15px;*/
+		height: 100%;
+		color: #424242;
+	} 
+}
+@media screen and (max-width:480px) {
+	.table-group-height {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

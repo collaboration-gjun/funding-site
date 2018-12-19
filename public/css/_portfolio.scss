@@ -10,6 +10,7 @@
 
 .achivementSection {
     display: flex;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 30px;
     color: #4a4a4a;
@@ -22,9 +23,8 @@
 
     .contentLeft {
         display: flex;
-        flex: 1 1 70%;
+        flex: 0 1 69%;
         flex-direction: column;
-        margin: 15px;
 
         @include breakpoint (max-width 768px) {
             flex: 1 1 100%;
@@ -162,7 +162,7 @@
 
     .sidePanel {
         display: flex;
-        flex: 1 1 30%;
+        flex: 0 1 29%;
         flex-direction: column;
 
         @include breakpoint (max-width 768px) {
@@ -177,7 +177,7 @@
             border-radius: $radius;
             background-color: white;
             font-size: 14px;
-            margin: 15px;
+            margin: 15px 0;
             padding: 25px;
 
             .teacherName {
@@ -233,7 +233,7 @@
             flex-direction: column;
             border-radius: $radius;
             background-color: white;
-            margin: 15px;
+            margin: 15px 0;
 
             .schoolAssignment {
                 padding: 19px 0;

@@ -1,5 +1,6 @@
 .whySection {
     display: flex;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 30px;
     color: #4a4a4a;
@@ -12,13 +13,14 @@
 
     .contentLeft {
         display: flex;
-        flex: 1 1 70%;
+        flex: 0 1 69%;
         flex-direction: column;
-        margin: 15px;
+        margin: 0;
 
         @include breakpoint($ipad) {
             flex: 1 1 100%;
             order: 1;
+            padding: 0 20px;
         }
 
         .contentTop {
@@ -41,15 +43,20 @@
                 @include breakpoint ($ipad) {
                     margin: 0;
                 }
-            }
+                li {
+                    &:before {
+                        content: '\f0a9';
+                        font-family: 'fontawesome';
+                        margin-right: 5px;
+                    }
+                    list-style-type: none;
 
-            ul li {
-                list-style-type: none;
-
-                span {
-                    margin-right: 5px;
+                    span {
+                        margin-right: 5px;
+                    }
                 }
             }
+
         }
 
         .contentBottom {
@@ -110,13 +117,13 @@
                 @include breakpoint($ipad) {
                     margin: 0;
                 }
-            }
-
-            ul li {
-                list-style-type: decimal;
-
-                span {
-                    margin-right: 5px;
+                li {
+                    list-style-type: none;
+                    &:before {
+                        content: '\f0a9';
+                        font-family: 'fontawesome';
+                        margin-right: 5px;
+                    }
                 }
             }
 
@@ -172,7 +179,7 @@
 
     .sidePanel {
         display: flex;
-        flex: 1 1 30%;
+        flex: 0 1 29%;
         flex-direction: column;
 
         @include breakpoint($ipad) {
@@ -185,9 +192,8 @@
             box-shadow: $shadow;
             flex-direction: column;
             border-radius: $radius;
-            margin-top: 15px;
             background-color: white;
-            margin: 15px;
+            margin: 0 0 15px;
 
             .teacherName {
                 padding: 15px;
@@ -209,6 +215,7 @@
                 flex-direction: column;
 
                 .teacherPhoto {
+                    max-width: 150px;
                     margin: 0 auto;
                 }
 
@@ -240,9 +247,8 @@
             box-shadow: $shadow;
             flex-direction: column;
             border-radius: $radius;
-            margin-top: 15px;
             background-color: white;
-            margin: 15px;
+            margin: 15px 0;
 
             .subscription {
                 padding: 25px;

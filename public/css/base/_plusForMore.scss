@@ -1,0 +1,25 @@
+.plusForMore {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  @include breakpoint($ipad){
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .BtnForFundingPage {
+    cursor: pointer;
+    color: $color_PlusForMoreBtn;
+    &:hover {
+      color: darken($color_PlusForMoreBtn, 10%);
+    }
+  }
+
+  .BtnForGeneric {
+    cursor: pointer;
+    color: $color-genericBlue;
+    &:hover {
+      color: darken($color-genericBlue, 10%);
+    }
+  }
+}

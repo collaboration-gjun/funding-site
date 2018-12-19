@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @include breakpoint($ipad){
+  @include breakpoint($ipad) {
     flex-direction: column;
   }
   .ratingPanel {
@@ -20,15 +20,15 @@
       flex-direction: column;
 
       &__header {
-        font-size:1.25rem;
-        @include breakpoint($ipad){
+        font-size: 1.25rem;
+        @include breakpoint($ipad) {
           text-align: center;
         }
       }
       &__body {
         display: flex;
         flex-direction: row;
-        @include breakpoint(max-width 991px){
+        @include breakpoint(max-width 991px) {
           flex-direction: column;
         }
         .score {
@@ -39,6 +39,22 @@
           align-items: center;
           .bigNum {
             font-size: 4rem;
+          }
+          .star-ratings-sprite {
+            font-size: 0;
+            height: 21px;
+            line-height: 0;
+            overflow: hidden;
+            text-indent: -999em;
+            width: 110px;
+            margin: 0 auto;
+
+            &-rating {
+              float: left;
+              height: 21px;
+              display: block;
+            }
+
           }
           .starRating {
             .orange {
@@ -56,19 +72,19 @@
             opacity: .25;
           }
           .progressBarWithStarsAndPercentage {
-            display:flex;
+            display: flex;
             justify-content: space-between;
             align-items: center;
-            @include breakpoint(max-width 991px){
+            @include breakpoint(max-width 991px) {
               margin-bottom: 12px;
             }
-            @include breakpoint(max-width 500px){
+            @include breakpoint(max-width 500px) {
               flex-direction: column;
 
             }
 
             .progress {
-              @include breakpoint(max-width 500px){
+              @include breakpoint(max-width 500px) {
                 display: none;
               }
               margin-bottom: 0;
@@ -85,6 +101,7 @@
               }
             }
             .starRating {
+              color: lighten($color_deep-gray, 30%);
               .orange {
                 color: $orange-color;
               }
@@ -94,7 +111,7 @@
               flex: 0 1 5%;
               align-self: left;
               justify-self: center;
-              @include breakpoint(max-width 991px){
+              @include breakpoint(max-width 991px) {
                 align-self: left;
               }
             }
@@ -125,7 +142,7 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 25px;
-        @include breakpoint($ipad){
+        @include breakpoint($ipad) {
           flex-direction: column;
         }
         .user {
@@ -262,22 +279,33 @@
         }
       }
       &__body {
+        &--noLogin {
+          display: none;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        @include breakpoint($ipad){
+        @include breakpoint($ipad) {
           flex-direction: column;
         }
         .user {
           display: flex;
-          justify-content: center;
-          align-items: flex-start;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1 1 20%;
           img {
             flex-shrink: 0;
             border-radius: 50px;
             max-width: 60px;
           }
-          flex: 1 1 20%;
+          .name {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: $color_deep-gray;
+            letter-spacing: unset;
+          }
         }
         .createComment {
           display: flex;
@@ -290,7 +318,7 @@
             align-items: center;
             font-size: 1.25rem;
             margin-bottom: 12px;
-            @include breakpoint($ipad){
+            @include breakpoint($ipad) {
               flex-direction: column;
             }
           }
@@ -326,6 +354,14 @@
               color: $orange-color;
             }
           }
+
+        }
+      }
+      &__loginMessage {
+        text-align: center;
+        font-size: 1.375em;
+        .orange {
+          color: darken($color_logo_red,10%);
         }
       }
     }

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" style='font-family: "Microsoft YaHei","Noto Sans TC", sans-serif;'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IT360</title>
+
+    <!--=========================== CSS ===========================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/vendor.min.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+
+    <!--=========================== JS ===========================-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/data-watermark.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            alert('很抱歉，目前本站瀏覽不支援IE9以下的瀏覽器，若看見版面跑掉，純屬正常狀況。');
+        });
+    </script>
+    <![endif]-->
+
+
+    <!--=========================== 思源黑體 ===========================-->
+    <!--<script src="https://use.typekit.net/mrp7iog.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>-->
+
+    <!--=========================== WOW ===========================-->
+    <script type="text/javascript" src="build/js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+</head>
+
+<body>
+<!-- test -->
+<div>
+    <!-- 導覽列 區塊 -->
+    <div class="orange-header">
+        <div class="orange-max-width center-block">
+            <div class="orange-float-r">
+                <div class="orange-txt-set white"><span class="oh-wline">│</span><a
+                        href="javascript:g_ShowHideJoin(true);">免費註冊</a><span
+                        class="oh-wline" id=>│</span><a href="javascript:g_ShowHideLogin(true);" class="">學/會員登入</a>
+                    <div class="orange-signin dropdown dropdown-base hidden"><a class="dropdown-toggle"
+                                                                                data-toggle="dropdown"
+                                                                                aria-expanded="false" id="lmenu07">
+                        <div>學/會員專區</div>
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="lmenu07" role="menu">
+                            <li><a href="#">點數卡產品兌換</a></li>
+                            <li><a href="#">APCS檢測專區</a></li>
+                            <li><a href="#">公告專區</a></li>
+                            <li><a href="#">我的課表</a></li>
+                            <li><a href="#">購買記錄</a></li>
+                            <li><a href="#">IT真人課程劃位</a></li>
+                            <li><a href="#">電腦分校課程劃位</a></li>
+                            <li><a href="#">外語真人課程劃位</a></li>
+                            <li><a href="#">取消劃位</a></li>
+                            <li><a href="#">課程檔案下載</a></li>
+                            <li><a href="#">教學平台測試</a></li>
+                            <li><a href="#">學習諮詢</a></li>
+                            <li><a href="#">常見問題</a></li>
+                            <li><a href="#">個資維護</a></li>
+                            <li><a href="#">上課權益查詢</a></li>
+                            <li><a href="#">忘記密碼</a></li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </div>
+                    <span class="oh-wline">│</span><a href="#">講師專區</a><span class="oh-wline">│</span>
+                </div>
+                <div class="oh-icon-group">
+                    <img src="build/images/search-icon.png" class="oh-img pad02"/> <img src="build/images/fb-icon.png"
+                                                                                        class="oh-img pad02"/> <img
+                        src="build/images/yt-icon.png" class="oh-img pad01 pad02"/>
+                </div>
+                <div class="buycar-group">
+                    <div class="orange-txt-set blue">$0.00 (0品項)</div>
+                    <img src="build/images/buycar-icon.png" class="oh-img pad01"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-all">
+        <nav class="navbar">
+            <div class="container-fluid content-width center-block">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header"><a href="#"><img class="logo" src="build/images/logo1.png" alt="IT360全方位課程"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#defaultNavbar1"
+                            aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span
+                            class="icon-bar b1"></span>
+                        <span class="icon-bar b2"></span> <span class="icon-bar b3"></span></button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="defaultNavbar1">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-dep01 hidden"></li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m01">上課去</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m08">募資<br class="br-hidden"/>課程</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m02">線上<br class="br-hidden"/>真人</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m03">影音<br class="br-hidden"/>課程</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m04">名師<br class="br-hidden"/>專區</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m05">合作<br class="br-hidden"/>開課</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m06">支援<br class="br-hidden"/>服務</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                        <li class="m00 hidden-xs">
+                            <div class="mline"></div>
+                        </li>
+                        <li><a href="#">
+                            <div class="lmenubase">
+                                <div class="lmenu m07">i踢踢<br class="br-hidden"/>論壇</div>
+                            </div>
+                            <div class="header-focus hidden"></div>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- 導覽列初始化 -->
+
+    </div>
+    <!-- 導覽列(瘦子版) -->
+    <nav class="navigation navbar-default navbar-fixed-top">
+        <div class="container flex">
+            <div class="brand">
+                <img class="img-responsive" src="build/images/logo.svg" alt="it360">
+            </div>
+            <div class="icons">
+                <div class="searchToggleBtn"><i class="fas fa-search"></i></div>
+                <div class="shoppingCart">$0.00 (0品項)<i class="fas fa-shopping-cart"></i></div>
+                <div class="openBtn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile Nav menu -->
+    <div class="mobile-nav-menu subMenu ani">
+
+        <button class="navbutton linker" data-navurl="login.aspx?ReturnUrl=%2fsoeasyedu%2fDefault.aspx"
+                data-target="_self" type="button">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </button>
+
+        <div class="clearfix"></div>
+        <ul class="mobile-nav-menu-ul">
+            <!--li click   addClass active  -->
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-book"></i>上課去</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-headset"></i>線上真人</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-chalkboard-teacher"></i>名師專區</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-suitcase"></i>支援服務</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-hand-holding-usd"></i>募資課程</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-video"></i>影音課程</li>
+
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-handshake"></i>合作開課</li>
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-comments"></i>i踢踢論壇</li>
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-users"></i>免費註冊</li>
+
+            <li class="mobile-nav-menu-li-title-1"><i class="fas fa-sign-in-alt"></i>學/會員登入</li>
+
+            <ul class="mobile-nav-menu-ul-2 animated fadeIn">
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">公告專區</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">我的課表</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">購買紀錄</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">支援服務</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">學習諮詢</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">個資維護</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">忘記密碼</a></li>
+                <li class="mobile-nav-menu-li-title-2-link contentNO"><a href="#">登出</a></li>
+            </ul>
+            <li class="mobile-nav-menu-li-title-1 contentNO"><i class="fas fa-sign-in-alt"></i>講師專區</li>
+
+
+            <div class="clearfix"></div>
+    </div>
+
+    <!-- 列印按鈕 -->
+    <div class="socialBtn">
+        <a href="#" target="_blank">
+            <div class="print">
+            </div>
+            <div class="print-text">列印<br/>所有<br/>課程</div>
+        </a>
+    </div>
+
+    <!-- 購物車結帳 -->
+    <!-- 內容 -->
+    <div class="container-fluid online-hot-bg pad-top60 pad-bottom60">
+        <!-- 區塊標題 -->
+        <div class="container-fluid title-group-width">
+            <div class="title-set"> <img src="./build/images/buycar_class/buycar-title-icon01.png" class="title-icon-set center-block icon-hidden" />
+                <span class="text-nowrap">
+                        <div class="title-txt-set"><span class="txt-icon">購</span>物車結帳</div>
+                        <div></div>
+                    </span>
+            </div>
+            <div class="title-line01"></div>
+            <!--<div class="title-p">課程目前開放劃位，名額有限，先搶先贏！</div>-->
+        </div>
+        <!-- 購物車步驟 -->
+        <div class="container-fluid buycar-max-width">
+            <div class="buystep-group center-block pad-top60">
+                <div class="bs-w01 new-w buystep-txt01">課程<span class="letter-space0px"> </span><span class="text-nowrap">結帳</span></div>
+                <img src="./build/images/buycar_class/buycar-step01.png" class="bs-img" />
+                <div class="bs-w02 new-w buystep-txt01 gray03"><span class="text-nowrap">訂購</span><span class="letter-space0px">
+                        </span><span class="text-nowrap">完成</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 購買清單-表格 -->
+    <div class="container-fluid buycar-max-width pad-top60 pad-bottom30">
+        <table width="100%" border="0">
+            <tbody class="buycar-table">
+            <tr class="bc-title-table">
+                <td class="bc-width01" colspan="1">課程名稱</td>
+                <td class="bc-width02">價格</td>
+                <td class="bc-width03">募資售價</td>
+                <td class="bc-width04">刪除</td>
+            </tr>
+            <tr>
+                <td class="buycar-txt blue">行銷360–玩社群賺現金</td>
+                <td class="buycar-txt t01">$3,200</td>
+                <td class="buycar-txt t01">$1,600</td>
+                <td><img src="./build/images/buycar_class/icon-trashcan.png" class="center-block img-trashcan"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- 結算 -->
+        <div class="container-fluid pad-top60">
+            <!-- 件數 -->
+            <div class="row sumup-width01 center-block">
+                <div class="col-xs-6 sumup-total-pad">
+                    <div class="sumup-small-txt">總共<span class="letter-space0px"> </span><span class="text-nowrap"><span
+                            class="blue01"> 1</span>件商品</span></div>
+                </div>
+                <div class="col-xs-6 no-pad-lr">
+                    <div class="sumup-small-txt">課程售價<span class="letter-space0px"> </span><span class="text-nowrap"><span
+                            class="momey01">$3,200</span></span></div>
+                </div>
+                <!--<div class="bc-gray-line center-block"></div>-->
+            </div>
+            <div class="row sumup-width01 center-block">
+                <div class="col-xs-6 sumup-total-pad">
+                    <!--<div class="sumup-small-txt">總共<span class="letter-space0px"> </span><span class="text-nowrap"><span class="blue01"> 4</span>件商品</span></div>-->
+                </div>
+                <div class="col-xs-6 no-pad-lr">
+                    <div class="sumup-small-txt">募資售價<span class="letter-space0px"> </span><span class="text-nowrap"><span
+                            class="momey01">$1,600</span></span></div>
+                </div>
+                <div class="bc-gray-line center-block"></div>
+            </div>
+            <!-- 總計 -->
+            <div class="row sumup-width02 center-block pad-top30">
+                <div class="col-xs-6 red-total-w01"></div>
+                <div class="col-xs-6 no-pad-lr red-total-w02">
+                    <div class="sumup-big-txt">總計<span class="letter-space0px"> </span><span class="text-nowrap"><span
+                            class="money-red">$1,600</span></span></div>
+                </div>
+                <div class="bc-gray-line"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 按鈕 -->
+    <div class="container-fluid buycar-max-width center-block pad-bottom100">
+        <div class="buy-btn center-block">
+            <div class="buy-txt">下一步</div>
+        </div>
+    </div>
+
+    <!-- Footer 區塊 -->
+    <div class="footer-all">
+        <div class="container-fluid footer-menu">
+            <!-- 第一層 -->
+            <div class="row content-width">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="fmenu-dep00 visible-xs visible-sm hidden-md">&nbsp;</div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">網站地圖</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">線上真人</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">影音課程</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">名師專區</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">合作開課</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">支援服務</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fmenu-dep01"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">學/會員專區</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">上課去</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#">學/會員登入</a></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#"
+                                                                                            target="_blank">Q&A</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item hidden"><a href="#"
+                                                                                                   target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block hidden-md"></div>
+                        <div class="fmenu-dep00 visible-xs visible-sm hidden-md">&nbsp;</div>
+                        <div class="fmenu-dep01 hidden-xs hidden-sm"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">友站連結</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠線上真人</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠電腦線上真人</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠國中狀元王</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠電腦</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">巨匠美語</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fmenu-dep01"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-3 fmenu-base">
+                            <div class="fmenu-list">
+                                <h4 class="fmenu-title">其他</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">個資條款</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">Facebook</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-12 fmenu-item"><a href="#" target="_blank">YouTube</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-0"><div class="fmenu-dep00">&nbsp;</div></div>-->
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <!-- 第三層 -->
+        <div class="container-fluid footer-info">
+            <div class="row content-width">
+                <div class="col-md-12 finfo-list">
+                    <div class="finfo-item m01"><a href="index.html"><img src="build/images/logo2.png"></a></div>
+                    <div class="finfo-dep00 hidden-xs">
+                        <div class="finfo-dep01">&nbsp;</div>
+                    </div>
+                    <div class="finfo-item m02">
+                        <div>產品諮詢專線 <span>│</span> 週一至週日 13:30~22:00</div>
+                        <div class="mtel">02-2361-1198</div>
+                        <div>技術服務專線 <span>│</span> 週一至週日 09:00~22:00</div>
+                        <div class="mtel">02-2557-6707
+                            <div>(市話撥打)</div>
+                        </div>
+                    </div>
+                    <div class="finfo-dep00 hidden-xs hidden-sm hidden-md">
+                        <div class="finfo-dep01">&nbsp;</div>
+                    </div>
+                    <div class="finfo-item m03"><span>本網站已經依據台灣網站內容分級管理</span> <span>巨匠電腦 版權所有</span><br/>
+                        <span>&copy;2018 Gjun information Co., Ltd.</span> <span>All Rights Reserved</span><br/>
+                        學員服務信箱：PConlineHelp@pcschool.com.tw
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(function () {
+                var bottomTimer = -1,
+                    bottomOpen = false;
+                var aniDuration = 'slow'; // 'slow'; // default : 400
+                var offsetY = 34;
+
+                var g_ShowFreeForm = function () {
+                    $('#freeForm').stop(true, true);
+
+                    if (bottomOpen) {
+                        $('#freeForm').animate({
+                            bottom: -$('#freeForm').height() + offsetY
+                        }, aniDuration, function () {
+                            bottomOpen = false;
+                        });
+                    } else {
+                        $('#freeForm').animate({
+                            bottom: 0
+                        }, aniDuration, function () {
+                            bottomOpen = true;
+                        });
+                    }
+                };
+
+                $('#freeBtn').bind('click', g_ShowFreeForm);
+
+                function ScaleSlider() {
+                    if (!bottomOpen) {
+                        $('#freeForm').css('bottom', -$('#freeForm').height() + offsetY);
+                        setTimeout(function () {
+                            $('#freeForm').css('bottom', -$('#freeForm').height() + offsetY);
+                        }, 1000);
+                    }
+                }
+
+                //Scale slider after document ready
+                ScaleSlider();
+
+                //Scale slider while window load/resize/orientationchange.
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+
+            });
+        </script>
+    </div>
+
+
+    <!-- 會員註冊成功再次登入區塊 -->
+
+
+    <!-- 免費註冊區塊 -->
+
+
+    <!-- gotop -->
+    <a href="#title">
+        <div class="gotop">
+            <div>
+                <div>
+                    <div class="arr01"></div>
+                    <div class="arr02"></div>
+                </div>
+            </div>
+            <span class="gotop-txt center-block"><span>TOP</span></span>
+        </div>
+    </a>
+
+    <!-- modal for course outline -->
+    <div class="modalCourseOutline">
+        <div class="modalCourseOutline__close">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <ul>
+            <li class="active">
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-play"></span>
+                    <span class="curriculum-item">課程介紹</span>
+                    <span class="time">02:35</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                1.社群行銷現況與未來挑戰
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                2.網路社群資訊收集與分析判斷技法
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                3.社群行銷目標與KPI設定步驟
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                4.社群行銷行動戰略規劃實作
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                4.社群行銷行動戰略規劃實作
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                5.社群平台與行銷戰略整合應用
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                6.社群行銷經營成功案例分析
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                7.縮短品牌成功之社群作戰策略
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                8.360社群經營成功的心法&技法
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                9.媒體廣告在社群行銷上的布局
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                10.社群影響力與口碑工具應用技巧
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                11.社群活動如何替企業創造最佳效益
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                12.線上與線下活動整合案例解析
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                13.社群擴散力模型VS.行銷漏斗
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                14.精準掌握社群風向善用數據分析
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                15.社群行為洞察挖掘行銷機會
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                16.社群互動觀察與改善技巧
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                17.社群活耀度提升技巧
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                18.社群導流與導購變現實戰技巧
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                19.社群行銷定位與鐵粉提升技巧
+                                            </span>
+                </a>
+            </li>
+            <li>
+                <a class="list-content" href="">
+                    <span aria-hidden="true" class="fa fa-lock"></span>
+                    <span class="curriculum-item">
+                                                20.消費者社群行為洞察及因應技巧
+                                            </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script type="application/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="application/javascript" src="build/js/templates.js"></script>
+<script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
+<script type="application/javascript" src="build/js/scripts.min.js"></script>
+
+</body>
+
+</html>

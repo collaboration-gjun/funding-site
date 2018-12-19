@@ -1,3 +1,4 @@
+/** on breakpoint $ipad shut down the original nav **/
 .orange-header {
   @include breakpoint($ipad){
     display: none;

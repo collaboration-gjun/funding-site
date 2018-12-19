@@ -1,0 +1,46 @@
+.subject {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 20px 10px 0;
+  @include breakpoint($ipad-mini){
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__mainLine {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $color_360MainBlue;
+    @include breakpoint($ipad-mini){
+      border-bottom: unset;
+    }
+    &__icon {
+      flex: 1 1 auto;
+      border-radius: 5px;
+      margin-right: 10px;
+      max-width: 60px;
+      background-color: $color_360MainBlue;
+      @include breakpoint($ipad-mini){
+        max-width: 30px;
+      }
+    }
+    &__title {
+      flex: 1 1 auto;
+      font-size: 2.5rem;
+      color: $color_360MainBlue;
+      @include breakpoint($ipad-mini){
+        font-size: 1.35rem;
+      }
+    }
+  }
+  &__line {
+    @include breakpoint($ipad-mini){
+      display: none;
+    }
+    flex: 1 1 auto;
+    border-bottom: 2px solid lighten($color_deep-gray, 20%);
+  }
+}

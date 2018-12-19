@@ -4,8 +4,10 @@
 @import 'susy';
 @import "compass/css3";
 @import "base/setting";
+@import "base/plusForMore";
+@import "base/subject";
 @import "course";
-@import "introduction";
+@import "videoIntro";
 @import "mainInfoBox";
 @import "starRating";
 @import "modified";
@@ -17,4 +19,8 @@
 @import "QASecttion";
 @import "sidePanel";
 @import "portfolio";
+@import "modalCourseOutline";
+@import "fundingPage";
+@import "buycar";
+@import "buycar-discount";
 

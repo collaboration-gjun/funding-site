@@ -1,0 +1,996 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*購物車--01訂購資訊-------------*/
+
+.buycar-max-width {
+	width: 75%;
+}
+
+
+.buystep-group {
+	width: 85%;
+}
+
+.bs-w01 {
+	width: 31%;
+}
+
+.bs-w01.new-w {
+	width: 45%;
+}
+
+.bs-w02 {
+	width: 31%;
+}
+
+.bs-w02.new-w {
+	width: 45%;
+}
+
+.bs-w03 {
+	width: 26%;
+}
+
+.bs-img {
+	display: inline-block;
+	padding-bottom: 16px;
+	margin-left: -5px;
+	padding-right: 3px;
+}
+
+
+
+.buystep-txt01 {
+	/*預設橘色*/
+	display: inline-block;
+	font-size: calc(1vw + 18px);
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #ee7800;
+	border-bottom: 5px solid #ee7800;
+}
+
+
+.buystep-txt01.gray01 {
+	color: #a8a8a8;
+	border-bottom: 5px solid #dbdbdb;
+	text-align: center;
+}
+
+.buystep-txt01.gray02 {
+	color: #a8a8a8;
+	border-bottom: 5px solid #dbdbdb;
+	text-align: center;
+}
+
+.buystep-txt01.orange02 {
+	color: #ee7800;
+	border-bottom: 5px solid #ee7800;
+	text-align: center;
+}
+
+
+.buystep-txt01.gray03 {
+	color: #a8a8a8;
+	border-bottom: 5px solid #dbdbdb;
+	text-align: center;
+}
+
+.buystep-txt01.orange03 {
+	color: #ee7800;
+	border-bottom: 5px solid #ee7800;
+	text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+	.bs-w01 {
+		width: 33%;
+	}
+
+	.bs-w02 {
+		width: 32%;
+	}
+
+	.bs-w03 {
+		width: 18%;
+	}
+
+	.buystep-txt01 {
+		letter-spacing: 0px;
+	}
+
+
+
+}
+
+
+/*購買課程--表格-------------*/
+
+
+/* .buycar-table tr:nth-child(n+2) > td:nth-child(1){
+	border-right: none;
+} */
+
+/* .buycar-table tr:nth-child(n+2) > td:nth-child(2){
+	border-left: none;
+} */
+
+
+
+.buycar-table tr>td {
+	/*height: 55px;*/
+	border: 1px solid #bebcbe;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.bc-title-table {
+	font-size: calc(.5vw + 16px);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #8f8f8f;
+}
+
+
+.bc-width01 {
+	width: 65%;
+	padding-left: 61px;
+}
+
+.bc-width01.code {
+	text-align: left;
+}
+
+
+.bc-width02 {
+	width: 20%;
+}
+
+.bc-width03 {
+	width: 15%;
+}
+
+
+.icon-w {
+	width: 70px;
+}
+
+
+.buycar-txt-icon {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+	width: 45px;
+	height: 45px;
+	border-radius: 4px;
+	background-color: gray;
+	line-height: 45px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.buycar-txt-icon.blue {
+	background-color: #002548;
+}
+
+.buycar-txt-icon.orange {
+	background-color: #f19333;
+}
+
+.buycar-txt-icon.green {
+	background-color: #169600;
+}
+
+
+.buycar-txt {
+	font-size: calc(.3vw + 16px);
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 1px;
+	color: gray;
+}
+
+.buycar-txt.code {
+	display: inline-block;
+	width: calc(100% - 60px);
+}
+
+.buycar-txt.blue {
+	color: #001b36;
+}
+
+.buycar-txt.orange {
+	color: #a95500;
+}
+
+.buycar-txt.green {
+	color: #0E5502;
+}
+
+
+.buycar-txt.t01 {
+	color: #2e2e2e;
+}
+
+.img-trashcan {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	.buycar-txt-icon {
+		font-size: 20px;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+	}
+}
+
+
+
+
+/*總結------*/
+
+.bc-gray-line {
+	width: 100%;
+	height: 2px;
+	background-color: #e8e8e8;
+	margin-top: 52px;
+}
+
+
+.bc-gray-line.line01 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.bc-gray-line.line02 {
+	width: 85%;
+	height: 2px;
+	background-color: #d0cfcf;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+.sumup-width01 {
+	width: 60%;
+}
+
+.sumup-width02 {
+	width: 100%;
+}
+
+
+.sumup-small-txt {
+	font-size: calc(.5vw + 16px);
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #1b1b1b;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.sumup-small-txt .blue01 {
+	font-size: calc(.6vw + 16px);
+	color: #0033ff;
+}
+
+.sumup-small-txt .momey01 {
+	font-style: italic;
+}
+
+
+.sumup-big-txt {
+	font-size: calc(.6vw + 18px);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #1b1b1b;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.sumup-big-txt .money-red {
+	font-style: italic;
+	font-weight: bold;
+	color: #c00000;
+}
+
+
+@media screen and (max-width: 1276px) {
+	.sumup-width01 {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 1017px) {
+	.bc-gray-line {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.buycar-txt-icon {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.buycar-txt {
+		font-size: calc(.3vw + 14px);
+	}
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+	.red-total-w01 {
+		width: 0%;
+	}
+
+	.red-total-w02 {
+		width: 100%;
+	}
+
+	.sumup-big-txt {
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.sumup-small-txt {
+		padding-left: 0px;
+	}
+
+
+
+	.sumup-total-pad {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+
+}
+
+
+
+/*訂購人資訊------*/
+
+.buyinfo-max-width {
+	width: 75%;
+	text-align: center;
+}
+
+.buy-center-title-line {
+	display: inline-block;
+	text-align: center;
+	border-bottom: 3px solid #002548;
+}
+
+.buy-center-title {
+	display: inline-block;
+	font-size: calc(1vw + 20px);
+	color: #002548;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+
+.buyinfo-bg {
+	width: 75%;
+	background-color: #ececec;
+	border-top: 1px solid #002548;
+	margin-top: -2px;
+	padding: 25px;
+}
+
+.binfo-p {
+	font-size: calc(.3vw + 14px);
+	font-weight: normal;
+	color: #74808c;
+	text-align: center;
+}
+
+.binfo-p.red {
+	color: #FF272B;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.binfo-p.pad01 {
+	padding-top: 20px;
+	/*padding-bottom: 20px;*/
+}
+
+
+.buy-form-width {
+	width: 57%;
+	padding-top: 20px;
+}
+
+.buy-form-width .valid-msg {
+	text-align: right;
+	width: 80%;
+	/*margin-top: -5px;*/
+	line-height: 100%;
+}
+
+.buy-form-w01 {
+	width: 100%;
+}
+
+
+.buy-form-p {
+	display: inline-block;
+	font-size: calc(.3vw + 16px);
+	font-weight: normal;
+	color: #151515;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+.buy-form-p.g01 {
+	color: #8f8f8f;
+}
+
+.buy-form-p.pad01 {
+	padding-left: 40px;
+}
+
+
+.buy-input {
+	display: inline-block;
+	width: 65%;
+	font-size: calc(.3vw + 16px);
+	font-weight: normal;
+}
+
+.buy-input.sp-w01 {
+	width: calc(65% - 40px);
+}
+
+.buy-input.sp-w02 {
+	width: calc(65% - 40px);
+}
+
+.buy-input.sp-w03 {
+	width: calc(65% - 40px);
+}
+
+
+@media screen and (max-width: 1005px) {
+	.buy-input.sp-w03 {
+		width: calc(95% - 40px);
+		margin-left: 40px;
+	}
+}
+
+
+@media screen and (max-width: 920px) {
+	.buy-form-width {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.buy-form-width {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.buy-input {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 334px) {
+	.buy-input.sp-w02 {
+		width: calc(95% - 40px);
+		margin-left: 40px;
+	}
+}
+
+
+
+/*按鈕設定----------*/
+
+.buy-txt {
+	font-size: calc(.3vw + 16px);
+	font-weight: 400;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: block;
+}
+
+.buy-btn:hover .buy-txt {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.buy-btn {
+	width: 24%;
+	background-color: #002548;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.buy-btn:hover {
+	background-color: #024686;
+}
+
+.buy-btn.sp01 {
+	display: inline-block;
+	width: 16%;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.buy-btn.orange {
+	background-color: #ee7800;
+}
+
+.buy-btn.orange:hover {
+	background-color: #FF9326;
+}
+
+
+.btn-txt-center {
+	text-align: center;
+}
+
+
+@media screen and (max-width: 991px) {
+	.buy-btn.sp01 {
+		width: 20%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.buy-btn.sp01 {
+		width: 30%;
+	}
+}
+
+
+@media screen and (max-width: 420px) {
+	.buy-btn.sp01 {
+		width: 35%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+
+
+
+
+
+
+/*select-選擇圓圈--設定-------*/
+
+.select-w01 {
+	display: inline-block;
+	/*width: 35%;*/
+	white-space: nowrap;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*文字設定*/
+.s-txt {
+	display: inline-block;
+	font-size: calc(.3vw + 16px);
+	font-weight: normal;
+	color: #151515;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.s-txt.gray01 {
+	font-size: calc(.2vw + 14px);
+	color: #74808c;
+	text-align: left;
+	letter-spacing: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	white-space: normal;
+	padding-left: 25px;
+}
+
+
+
+label {
+	font-weight: normal;
+}
+
+
+/*單選按鈕*/
+.select-radio {
+	width: 18px;
+	height: 18px;
+	//background-color: #000;
+	/*margin-right: 30px;*/
+	border-radius: 50%;
+	position: relative;
+	/*top: -15px;*/
+}
+
+.select-radio.sp-top {
+	top: -30px;
+}
+
+
+
+.select-radio:before,
+.select-radio:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	transition: .3s ease;
+}
+
+.select-radio:before {
+	top: 0px;
+	left: 0px;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border: 1px solid #bdbdbd;
+}
+
+.select-radio:after {
+	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+}
+
+.select-radio:checked:after {
+	top: 3px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
+	background-color: #979797;
+}
+
+
+/*直線與圓圈-----*/
+
+.height-cline {
+	width: 1px;
+	height: 60px;
+	background-color: #002548;
+}
+
+.circle-set {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #002548;
+}
+
+
+/*check--多選框方形--設定--------*/
+
+.buy-ctxt {
+	/*文字位置設定*/
+	display: inline-block;
+	position: relative;
+	line-height: 125%;
+	top: -8px;
+	font-size: calc(.3vw + 15px);
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #515151;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.buy-ctxt .blue {
+	color: #1f6eff;
+}
+
+
+.form-check {
+	display: inline-block;
+	width: auto;
+	/*30px;*/
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	line-height: 200%;
+}
+
+.form-check label {
+	/*position: absolute;*/
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+	margin-left: -30px;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	padding-left: 2px;
+	padding-top: 2px;
+	margin-right: 10px;
+}
+
+.form-check label:after {
+	content: '\00a0';
+	display: inline-block;
+	border: 4px solid rgba(20, 133, 255, 1);
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	border-top-width: 0;
+	border-right-width: 0;
+	opacity: 0;
+	transform: rotate(-50deg);
+}
+
+
+.form-check input[type=checkbox]:checked+label:after {
+	opacity: 1;
+}
+
+.form-check input[type=checkbox] {
+	opacity: 0;
+	position: relative;
+	/*absolute;*/
+	z-index: 999;
+	left: 0;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	/*margin-top: -15px;*/
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 589px) {
+	.form-check {
+		width: 45%;
+	}
+
+	.buy-ctxt {
+		width: calc(100% - 35px);
+		white-space: nowrap;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+	.form-check {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 371px) {
+	.buy-ctxt {
+		white-space: normal;
+		top: 8px;
+	}
+}
+
+
+
+
+/*購物車--01訂購資訊--總寬度調整*/
+
+@media screen and (max-width: 1010px) {
+	.buystep-group {
+		width: 95%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	.buy-btn {
+		width: 55%;
+	}
+}
+
+
+@media screen and (max-width: 590px) {
+
+	.buycar-max-width {
+		width: 90%;
+	}
+
+	.buyinfo-bg {
+		width: 90%;
+	}
+
+}
+
+
+@media screen and (max-width: 490px) {
+	.buyinfo-bg {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.buy-form-width {
+		width: 95%;
+	}
+
+}
+
+
+@media screen and (max-width: 462px) {
+	.buystep-group {
+		width: 100%;
+	}
+}
+
+
+/*購物車--02付款方式-----*/
+
+.point-pay-width {
+	width: 35%;
+}
+
+
+.point-pay-group>tr>td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.point-pay-txt01 {
+	font-size: calc(.4vw + 16px);
+	letter-spacing: 1px;
+	text-align: center;
+	color: #1A1A1A;
+}
+
+
+.point-pay-txt01.red01 {
+	color: #c00000;
+}
+
+.point-pay-txt01.blue01 {
+	color: #0033ff;
+}
+
+
+.ppay-number01 {
+	font-size: calc(.6vw + 18px);
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+	color: #1A1A1A;
+}
+
+.ppay-number01.red01 {
+	color: #c00000;
+}
+
+.ppay-number01.blue01 {
+	color: #0033ff;
+}
+
+.ppay-number02 {
+	font-size: calc(.4vw + 16px);
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	color: #1A1A1A;
+}
+
+.ppay-number02.red01 {
+	color: #c00000;
+}
+
+.ppay-number02.blue01 {
+	color: #0033ff;
+}
+
+
+.ppay-white-line {
+	width: 100%;
+	height: 2px;
+	background-color: #ffffff;
+	margin-top: -58px;
+	margin-bottom: 58px;
+}
+
+
+@media screen and (max-width: 1100px) {
+	.point-pay-width {
+		width: 45%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.point-pay-width {
+		width: 75%;
+	}
+}
+
+
+@media screen and (max-width: 365px) {
+	.point-pay-width {
+		width: 95%;
+	}
+}
+
+
+/*購物車--03訂購完成-----*/
+
+.okbuy-big-txt {
+	font-size: calc(.8vw + 18px);
+	color: #0033ff;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.okbuy-sm-txt {
+	font-size: calc(.3vw + 16px);
+	color: #1A1A1A;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+/*購物車--定型化契約--------------------*/
+
+.white-bg {
+	background-color: #ffffff;
+}
+
+.wh-contract {
+	width: 100%;
+	height: 100vh;
+	border: 1px #d5d5d5 solid;
+}
+
+
+/*目前點數--文字-----*/
+
+.nowpoint-txt {
+	font-size: calc(.3vw + 16px);
+	color: #0033ff;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.nowpoint-txt .nopoint {
+	font-size: calc(.1vw + 14px);
+	color: #ff1744;
+	padding-left: 10px;
+	font-weight: normal;
+}
